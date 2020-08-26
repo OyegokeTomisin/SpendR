@@ -79,8 +79,7 @@
 		4F01B0B724F7115C005B6CD7 /* SpendR */ = {
 			isa = PBXGroup;
 			children = (
-				4F01B0B824F7115C005B6CD7 /* AppDelegate.swift */,
-				4F01B0BA24F7115C005B6CD7 /* SceneDelegate.swift */,
+				4F01B0DB24F7137C005B6CD7 /* AppDelegate */,
 				4F01B0BC24F7115C005B6CD7 /* ViewController.swift */,
 				4F01B0BE24F7115C005B6CD7 /* Main.storyboard */,
 				4F01B0C124F7115E005B6CD7 /* Assets.xcassets */,
@@ -99,6 +98,15 @@
 			path = SpendRTests;
 			sourceTree = "<group>";
 		};
+		4F01B0DB24F7137C005B6CD7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4F01B0B824F7115C005B6CD7 /* AppDelegate.swift */,
+				4F01B0BA24F7115C005B6CD7 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +117,7 @@
 				4F01B0B124F7115C005B6CD7 /* Sources */,
 				4F01B0B224F7115C005B6CD7 /* Frameworks */,
 				4F01B0B324F7115C005B6CD7 /* Resources */,
+				4F01B0DA24F7122F005B6CD7 /* SwiftLing + Run Script */,
 			);
 			buildRules = (
 			);
@@ -194,6 +203,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F01B0DA24F7122F005B6CD7 /* SwiftLing + Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLing + Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint --config .swiftlint.yml\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F01B0B124F7115C005B6CD7 /* Sources */ = {
