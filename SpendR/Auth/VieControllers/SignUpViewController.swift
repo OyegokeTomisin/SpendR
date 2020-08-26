@@ -9,22 +9,33 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction private func signUpButtonTapped(_ sender: Any) {
         do {
             let account = try UserAccount(email: emailTextField.text, password: passwordTextField.text)
-            // sign up this account
+            let task = AuthService(delegate: self)
+            task.createUser(with: account)
         } catch let error {
-            debugPrint(error)
+            didCompleteRequestWithfailure(error: error)
         }
+    }
+}
+
+extension SignUpViewController: AuthRequestServiceDelegate {
+    func didCompleteRequestWithSuccess() {
+        // account creation success
+    }
+    
+    func didCompleteRequestWithfailure(error: Error) {
+        debugPrint(error.localizedDescription)
     }
 }
