@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DF9808FF9D2612D31913269 /* Pods_SpendRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FA740DC688C88379AB9C95 /* Pods_SpendRTests.framework */; };
 		4F01B0B924F7115C005B6CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0B824F7115C005B6CD7 /* AppDelegate.swift */; };
 		4F01B0BB24F7115C005B6CD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0BA24F7115C005B6CD7 /* SceneDelegate.swift */; };
 		4F01B0BD24F7115C005B6CD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0BC24F7115C005B6CD7 /* ViewController.swift */; };
@@ -27,6 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B919D94ECDE75E6556F4B2E /* Pods-SpendRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendRTests.release.xcconfig"; path = "Target Support Files/Pods-SpendRTests/Pods-SpendRTests.release.xcconfig"; sourceTree = "<group>"; };
+		1C2537A652F6E1089C63A67C /* Pods-SpendR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendR.release.xcconfig"; path = "Target Support Files/Pods-SpendR/Pods-SpendR.release.xcconfig"; sourceTree = "<group>"; };
+		222111FAEE949EC0BD0E1642 /* Pods_SpendR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpendR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36FA740DC688C88379AB9C95 /* Pods_SpendRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpendRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40FF8C6755B87EA5D46B112A /* Pods-SpendRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendRTests.debug.xcconfig"; path = "Target Support Files/Pods-SpendRTests/Pods-SpendRTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F01B0B524F7115C005B6CD7 /* SpendR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F01B0B824F7115C005B6CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F01B0BA24F7115C005B6CD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5C8AD8F9477AE58EFDC0FB /* Pods_SpendR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DF9808FF9D2612D31913269 /* Pods_SpendRTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +72,8 @@
 				4F01B0B724F7115C005B6CD7 /* SpendR */,
 				4F01B0CE24F7115F005B6CD7 /* SpendRTests */,
 				4F01B0B624F7115C005B6CD7 /* Products */,
+				FED1890CD0FB38DA772DD0A2 /* Pods */,
+				ED826FE867F75D81ACFC66C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,10 +124,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F01B0D424F7115F005B6CD7 /* Build configuration list for PBXNativeTarget "SpendR" */;
 			buildPhases = (
+				A3563111B657FF99BBEFACB8 /* [CP] Check Pods Manifest.lock */,
 				4F01B0B124F7115C005B6CD7 /* Sources */,
 				4F01B0B224F7115C005B6CD7 /* Frameworks */,
 				4F01B0B324F7115C005B6CD7 /* Resources */,
 				4F01B0DA24F7122F005B6CD7 /* SwiftLing + Run Script */,
+				98618E790B4FEE23516B9211 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +144,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F01B0D724F7115F005B6CD7 /* Build configuration list for PBXNativeTarget "SpendRTests" */;
 			buildPhases = (
+				F9E71871A8C29CDCBD1C902A /* [CP] Check Pods Manifest.lock */,
 				4F01B0C724F7115F005B6CD7 /* Sources */,
 				4F01B0C824F7115F005B6CD7 /* Frameworks */,
 				4F01B0C924F7115F005B6CD7 /* Resources */,
@@ -222,6 +235,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint --config .swiftlint.yml\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		98618E790B4FEE23516B9211 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpendR/Pods-SpendR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpendR/Pods-SpendR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpendR/Pods-SpendR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3563111B657FF99BBEFACB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpendR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9E71871A8C29CDCBD1C902A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpendRTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -390,6 +464,7 @@
 		};
 		4F01B0D524F7115F005B6CD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BB3B3168C2158D839EC31BA /* Pods-SpendR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -407,6 +482,7 @@
 		};
 		4F01B0D624F7115F005B6CD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C2537A652F6E1089C63A67C /* Pods-SpendR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -424,6 +500,7 @@
 		};
 		4F01B0D824F7115F005B6CD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40FF8C6755B87EA5D46B112A /* Pods-SpendRTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -445,6 +522,7 @@
 		};
 		4F01B0D924F7115F005B6CD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B919D94ECDE75E6556F4B2E /* Pods-SpendRTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
