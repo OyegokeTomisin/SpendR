@@ -24,6 +24,7 @@ class SignUpViewController: UIViewController {
             let account = try UserAccount(email: emailTextField.text, password: passwordTextField.text)
             let task = AuthService(delegate: self)
             task.createUser(with: account)
+            HUD.display()
         } catch let error {
             didCompleteRequestWithfailure(error: error)
         }
@@ -32,10 +33,12 @@ class SignUpViewController: UIViewController {
 
 extension SignUpViewController: AuthRequestServiceDelegate {
     func didCompleteRequestWithSuccess() {
+        HUD.dismiss()
         // account creation success
     }
     
     func didCompleteRequestWithfailure(error: Error) {
+        HUD.dismiss()
         debugPrint(error.localizedDescription)
     }
 }

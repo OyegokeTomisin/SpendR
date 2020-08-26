@@ -9,13 +9,13 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    
+
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
     }
     
@@ -24,6 +24,7 @@ class LoginViewController: UIViewController {
             let account = try UserAccount(email: emailTextField.text, password: passwordTextField.text)
             let service = AuthService(delegate: self)
             service.loginUser(with: account)
+            HUD.display()
         } catch let error {
             didCompleteRequestWithfailure(error: error)
         }
@@ -32,10 +33,12 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: AuthRequestServiceDelegate {
     func didCompleteRequestWithSuccess() {
+        HUD.dismiss()
         // login success
     }
-    
+
     func didCompleteRequestWithfailure(error: Error) {
+        HUD.dismiss()
         debugPrint(error.localizedDescription)
     }
 }
