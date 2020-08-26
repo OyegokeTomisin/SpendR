@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,11 @@
 		4F01B0C224F7115E005B6CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F01B0C124F7115E005B6CD7 /* Assets.xcassets */; };
 		4F01B0C524F7115E005B6CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F01B0C324F7115E005B6CD7 /* LaunchScreen.storyboard */; };
 		4F01B0D024F7115F005B6CD7 /* SpendRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0CF24F7115F005B6CD7 /* SpendRTests.swift */; };
+		4F01B0DE24F714A4005B6CD7 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F01B0DD24F714A4005B6CD7 /* Auth.storyboard */; };
+		4F01B0E024F71541005B6CD7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0DF24F71541005B6CD7 /* LoginViewController.swift */; };
+		4F01B0E224F7154E005B6CD7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0E124F7154E005B6CD7 /* SignUpViewController.swift */; };
+		4F01B0E524F71801005B6CD7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F01B0E424F71801005B6CD7 /* GoogleService-Info.plist */; };
+		CC5C8AD8F9477AE58EFDC0FB /* Pods_SpendR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222111FAEE949EC0BD0E1642 /* Pods_SpendR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		4F01B0CB24F7115F005B6CD7 /* SpendRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpendRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F01B0CF24F7115F005B6CD7 /* SpendRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendRTests.swift; sourceTree = "<group>"; };
 		4F01B0D124F7115F005B6CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F01B0DD24F714A4005B6CD7 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		4F01B0DF24F71541005B6CD7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4F01B0E124F7154E005B6CD7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4F01B0E424F71801005B6CD7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5BB3B3168C2158D839EC31BA /* Pods-SpendR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendR.debug.xcconfig"; path = "Target Support Files/Pods-SpendR/Pods-SpendR.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				4F01B0DB24F7137C005B6CD7 /* AppDelegate */,
+				4F01B0DC24F71486005B6CD7 /* Auth */,
 				4F01B0BC24F7115C005B6CD7 /* ViewController.swift */,
 				4F01B0BE24F7115C005B6CD7 /* Main.storyboard */,
 				4F01B0C124F7115E005B6CD7 /* Assets.xcassets */,
 				4F01B0C324F7115E005B6CD7 /* LaunchScreen.storyboard */,
+				4F01B0E424F71801005B6CD7 /* GoogleService-Info.plist */,
 				4F01B0C624F7115E005B6CD7 /* Info.plist */,
 			);
 			path = SpendR;
@@ -115,6 +127,44 @@
 				4F01B0BA24F7115C005B6CD7 /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4F01B0DC24F71486005B6CD7 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4F01B0DD24F714A4005B6CD7 /* Auth.storyboard */,
+				4F01B0E324F71585005B6CD7 /* VieControllers */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		4F01B0E324F71585005B6CD7 /* VieControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4F01B0E124F7154E005B6CD7 /* SignUpViewController.swift */,
+				4F01B0DF24F71541005B6CD7 /* LoginViewController.swift */,
+			);
+			path = VieControllers;
+			sourceTree = "<group>";
+		};
+		ED826FE867F75D81ACFC66C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				222111FAEE949EC0BD0E1642 /* Pods_SpendR.framework */,
+				36FA740DC688C88379AB9C95 /* Pods_SpendRTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FED1890CD0FB38DA772DD0A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BB3B3168C2158D839EC31BA /* Pods-SpendR.debug.xcconfig */,
+				1C2537A652F6E1089C63A67C /* Pods-SpendR.release.xcconfig */,
+				40FF8C6755B87EA5D46B112A /* Pods-SpendRTests.debug.xcconfig */,
+				1B919D94ECDE75E6556F4B2E /* Pods-SpendRTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +252,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F01B0DE24F714A4005B6CD7 /* Auth.storyboard in Resources */,
 				4F01B0C524F7115E005B6CD7 /* LaunchScreen.storyboard in Resources */,
+				4F01B0E524F71801005B6CD7 /* GoogleService-Info.plist in Resources */,
 				4F01B0C224F7115E005B6CD7 /* Assets.xcassets in Resources */,
 				4F01B0C024F7115C005B6CD7 /* Main.storyboard in Resources */,
 			);
@@ -304,9 +356,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F01B0E024F71541005B6CD7 /* LoginViewController.swift in Sources */,
 				4F01B0BD24F7115C005B6CD7 /* ViewController.swift in Sources */,
 				4F01B0B924F7115C005B6CD7 /* AppDelegate.swift in Sources */,
 				4F01B0BB24F7115C005B6CD7 /* SceneDelegate.swift in Sources */,
+				4F01B0E224F7154E005B6CD7 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
