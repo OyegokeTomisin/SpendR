@@ -19,6 +19,9 @@
 		4F01B0E024F71541005B6CD7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0DF24F71541005B6CD7 /* LoginViewController.swift */; };
 		4F01B0E224F7154E005B6CD7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0E124F7154E005B6CD7 /* SignUpViewController.swift */; };
 		4F01B0E524F71801005B6CD7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F01B0E424F71801005B6CD7 /* GoogleService-Info.plist */; };
+		4F01B0E824F71B2F005B6CD7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0E724F71B2F005B6CD7 /* String+Extension.swift */; };
+		4F01B0EA24F71C9E005B6CD7 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0E924F71C9E005B6CD7 /* UserAccount.swift */; };
+		4F01B0EC24F71CE7005B6CD7 /* UserAccountError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0EB24F71CE7005B6CD7 /* UserAccountError.swift */; };
 		CC5C8AD8F9477AE58EFDC0FB /* Pods_SpendR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222111FAEE949EC0BD0E1642 /* Pods_SpendR.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +56,9 @@
 		4F01B0DF24F71541005B6CD7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4F01B0E124F7154E005B6CD7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4F01B0E424F71801005B6CD7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F01B0E724F71B2F005B6CD7 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		4F01B0E924F71C9E005B6CD7 /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		4F01B0EB24F71CE7005B6CD7 /* UserAccountError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountError.swift; sourceTree = "<group>"; };
 		5BB3B3168C2158D839EC31BA /* Pods-SpendR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendR.debug.xcconfig"; path = "Target Support Files/Pods-SpendR/Pods-SpendR.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +107,7 @@
 			children = (
 				4F01B0DB24F7137C005B6CD7 /* AppDelegate */,
 				4F01B0DC24F71486005B6CD7 /* Auth */,
+				4F01B0E624F71B15005B6CD7 /* Utility */,
 				4F01B0BC24F7115C005B6CD7 /* ViewController.swift */,
 				4F01B0BE24F7115C005B6CD7 /* Main.storyboard */,
 				4F01B0C124F7115E005B6CD7 /* Assets.xcassets */,
@@ -133,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				4F01B0DD24F714A4005B6CD7 /* Auth.storyboard */,
+				4F01B0E924F71C9E005B6CD7 /* UserAccount.swift */,
 				4F01B0E324F71585005B6CD7 /* VieControllers */,
 			);
 			path = Auth;
@@ -145,6 +153,31 @@
 				4F01B0DF24F71541005B6CD7 /* LoginViewController.swift */,
 			);
 			path = VieControllers;
+			sourceTree = "<group>";
+		};
+		4F01B0E624F71B15005B6CD7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4F01B0EE24F71F61005B6CD7 /* Extension */,
+				4F01B0ED24F71F5C005B6CD7 /* Error */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		4F01B0ED24F71F5C005B6CD7 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				4F01B0EB24F71CE7005B6CD7 /* UserAccountError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		4F01B0EE24F71F61005B6CD7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4F01B0E724F71B2F005B6CD7 /* String+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		ED826FE867F75D81ACFC66C0 /* Frameworks */ = {
@@ -360,7 +393,10 @@
 				4F01B0BD24F7115C005B6CD7 /* ViewController.swift in Sources */,
 				4F01B0B924F7115C005B6CD7 /* AppDelegate.swift in Sources */,
 				4F01B0BB24F7115C005B6CD7 /* SceneDelegate.swift in Sources */,
+				4F01B0E824F71B2F005B6CD7 /* String+Extension.swift in Sources */,
 				4F01B0E224F7154E005B6CD7 /* SignUpViewController.swift in Sources */,
+				4F01B0EA24F71C9E005B6CD7 /* UserAccount.swift in Sources */,
+				4F01B0EC24F71CE7005B6CD7 /* UserAccountError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
