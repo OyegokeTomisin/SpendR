@@ -34,7 +34,8 @@ class SignUpViewController: UIViewController {
 extension SignUpViewController: AuthRequestServiceDelegate {
     func didCompleteRequestWithSuccess() {
         HUD.dismiss()
-        // account creation success
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        appDelegate?.changeRootViewController(to: Storyboard.main, with: ViewController.identifier)
     }
     
     func didCompleteRequestWithfailure(error: Error) {

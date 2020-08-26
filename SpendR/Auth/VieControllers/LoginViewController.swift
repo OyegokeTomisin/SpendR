@@ -34,7 +34,8 @@ class LoginViewController: UIViewController {
 extension LoginViewController: AuthRequestServiceDelegate {
     func didCompleteRequestWithSuccess() {
         HUD.dismiss()
-        // login success
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        appDelegate?.changeRootViewController(to: Storyboard.main, with: ViewController.identifier)
     }
 
     func didCompleteRequestWithfailure(error: Error) {

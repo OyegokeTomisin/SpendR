@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4DF9808FF9D2612D31913269 /* Pods_SpendRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FA740DC688C88379AB9C95 /* Pods_SpendRTests.framework */; };
 		4F01B0B924F7115C005B6CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0B824F7115C005B6CD7 /* AppDelegate.swift */; };
-		4F01B0BB24F7115C005B6CD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0BA24F7115C005B6CD7 /* SceneDelegate.swift */; };
 		4F01B0BD24F7115C005B6CD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0BC24F7115C005B6CD7 /* ViewController.swift */; };
 		4F01B0C024F7115C005B6CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F01B0BE24F7115C005B6CD7 /* Main.storyboard */; };
 		4F01B0C224F7115E005B6CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F01B0C124F7115E005B6CD7 /* Assets.xcassets */; };
@@ -25,6 +24,8 @@
 		4F01B0F124F71FC8005B6CD7 /* AuthRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0F024F71FC8005B6CD7 /* AuthRequestService.swift */; };
 		4F01B0F324F721F0005B6CD7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0F224F721F0005B6CD7 /* AuthService.swift */; };
 		4F01B0F524F726CA005B6CD7 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0F424F726CA005B6CD7 /* HUD.swift */; };
+		4F01B0F824F729E3005B6CD7 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0F724F729E3005B6CD7 /* Storyboard.swift */; };
+		4F01B0FA24F72C1F005B6CD7 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0F924F72C1F005B6CD7 /* UIViewController+Extension.swift */; };
 		CC5C8AD8F9477AE58EFDC0FB /* Pods_SpendR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222111FAEE949EC0BD0E1642 /* Pods_SpendR.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +47,6 @@
 		40FF8C6755B87EA5D46B112A /* Pods-SpendRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendRTests.debug.xcconfig"; path = "Target Support Files/Pods-SpendRTests/Pods-SpendRTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F01B0B524F7115C005B6CD7 /* SpendR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F01B0B824F7115C005B6CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F01B0BA24F7115C005B6CD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4F01B0BC24F7115C005B6CD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4F01B0BF24F7115C005B6CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F01B0C124F7115E005B6CD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +65,8 @@
 		4F01B0F024F71FC8005B6CD7 /* AuthRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestService.swift; sourceTree = "<group>"; };
 		4F01B0F224F721F0005B6CD7 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		4F01B0F424F726CA005B6CD7 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		4F01B0F724F729E3005B6CD7 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		4F01B0F924F72C1F005B6CD7 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		5BB3B3168C2158D839EC31BA /* Pods-SpendR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendR.debug.xcconfig"; path = "Target Support Files/Pods-SpendR/Pods-SpendR.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				4F01B0B824F7115C005B6CD7 /* AppDelegate.swift */,
-				4F01B0BA24F7115C005B6CD7 /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -165,9 +166,10 @@
 		4F01B0E624F71B15005B6CD7 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				4F01B0F424F726CA005B6CD7 /* HUD.swift */,
-				4F01B0EE24F71F61005B6CD7 /* Extension */,
+				4F01B0FB24F72D8C005B6CD7 /* Enum */,
 				4F01B0ED24F71F5C005B6CD7 /* Error */,
+				4F01B0EE24F71F61005B6CD7 /* Extension */,
+				4F01B0F624F7285E005B6CD7 /* Activity Indicator */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				4F01B0E724F71B2F005B6CD7 /* String+Extension.swift */,
+				4F01B0F924F72C1F005B6CD7 /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -195,6 +198,22 @@
 				4F01B0F024F71FC8005B6CD7 /* AuthRequestService.swift */,
 			);
 			path = Requests;
+			sourceTree = "<group>";
+		};
+		4F01B0F624F7285E005B6CD7 /* Activity Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				4F01B0F424F726CA005B6CD7 /* HUD.swift */,
+			);
+			path = "Activity Indicator";
+			sourceTree = "<group>";
+		};
+		4F01B0FB24F72D8C005B6CD7 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				4F01B0F724F729E3005B6CD7 /* Storyboard.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 		ED826FE867F75D81ACFC66C0 /* Frameworks */ = {
@@ -406,11 +425,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F01B0FA24F72C1F005B6CD7 /* UIViewController+Extension.swift in Sources */,
 				4F01B0F124F71FC8005B6CD7 /* AuthRequestService.swift in Sources */,
 				4F01B0E024F71541005B6CD7 /* LoginViewController.swift in Sources */,
 				4F01B0BD24F7115C005B6CD7 /* ViewController.swift in Sources */,
 				4F01B0B924F7115C005B6CD7 /* AppDelegate.swift in Sources */,
-				4F01B0BB24F7115C005B6CD7 /* SceneDelegate.swift in Sources */,
+				4F01B0F824F729E3005B6CD7 /* Storyboard.swift in Sources */,
 				4F01B0E824F71B2F005B6CD7 /* String+Extension.swift in Sources */,
 				4F01B0F524F726CA005B6CD7 /* HUD.swift in Sources */,
 				4F01B0E224F7154E005B6CD7 /* SignUpViewController.swift in Sources */,
