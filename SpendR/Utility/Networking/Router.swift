@@ -9,7 +9,7 @@
 import Foundation
 
 class Router<Endpoint: NetworkEndpoint>: NetworkRouter {
-    
+
     func request(_ route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion) {
         switch route.networkTask {
         case .create:
@@ -22,20 +22,20 @@ class Router<Endpoint: NetworkEndpoint>: NetworkRouter {
             delete()
         }
     }
-    
+
     private func create() {
-        
+
     }
-    
+
     private func read() {
-        
+
     }
-    
+
     private func update() {
-        
+
     }
-    
+
     private func delete() {
-        
+
     }
 }
