@@ -8,9 +8,11 @@
 
 import Foundation
 
+typealias Parameter = [String: Any]
+
 enum NetworkTask {
-    case create
+    case create(data: Parameter)
+    case update(data: Parameter)
     case read
-    case update
     case delete
 }

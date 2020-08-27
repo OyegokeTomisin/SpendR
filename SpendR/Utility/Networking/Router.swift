@@ -7,25 +7,24 @@
 //
 
 import Foundation
-import FirebaseFirestoreSwift
 
 class Router<Endpoint: NetworkEndpoint>: NetworkRouter {
 
     func request(_ route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion) {
         switch route.networkTask {
-        case .create:
-            create(route: route, completion: completion)
+        case .create(let data):
+            create(data, route: route, completion: completion)
         case .read:
             read(route: route, completion: completion)
-        case .update:
-            update(route: route, completion: completion)
+        case .update(let data):
+            update(data, route: route, completion: completion)
         case .delete:
             delete(route: route, completion: completion)
         }
     }
 
-    private func create(route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion) {
-        route.documentReference.setData([:]) { error in
+    private func create(_ data: Parameter, route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion) {
+        route.documentReference.setData(data) { error in
             if let error = error {
                 completion(.failure(error))
             } else {
@@ -44,8 +43,8 @@ class Router<Endpoint: NetworkEndpoint>: NetworkRouter {
         }
     }
 
-    private func update(route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion) {
-        route.documentReference.updateData([:]) { error in
+    private func update(_ data: Parameter, route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion) {
+        route.documentReference.updateData(data) { error in
             if let error = error {
                 completion(.failure(error))
             } else {

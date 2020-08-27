@@ -262,8 +262,8 @@
 		4FE6A73524F860ED00AD9D2C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				4FE6A73624F8610700AD9D2C /* NetworkTask.swift */,
 				4FE6A73824F8614D00AD9D2C /* Router.swift */,
+				4FE6A73624F8610700AD9D2C /* NetworkTask.swift */,
 				4FE6A73C24F8631700AD9D2C /* NetworkRouter.swift */,
 				4FE6A73A24F8625D00AD9D2C /* NetworkEndpoint.swift */,
 			);
