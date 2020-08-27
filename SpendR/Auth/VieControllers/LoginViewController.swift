@@ -40,6 +40,6 @@ extension LoginViewController: AuthRequestServiceDelegate {
 
     func didCompleteRequestWithfailure(error: Error) {
         HUD.dismiss()
-        debugPrint(error.localizedDescription)
+        showAlert(title: MessageConstants.errorTitle, message: error.localizedDescription)
     }
 }

@@ -26,6 +26,7 @@
 		4F01B0F524F726CA005B6CD7 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0F424F726CA005B6CD7 /* HUD.swift */; };
 		4F01B0F824F729E3005B6CD7 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0F724F729E3005B6CD7 /* Storyboard.swift */; };
 		4F01B0FA24F72C1F005B6CD7 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0F924F72C1F005B6CD7 /* UIViewController+Extension.swift */; };
+		4F01B0FD24F72F69005B6CD7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0FC24F72F69005B6CD7 /* Constants.swift */; };
 		CC5C8AD8F9477AE58EFDC0FB /* Pods_SpendR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222111FAEE949EC0BD0E1642 /* Pods_SpendR.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		4F01B0F424F726CA005B6CD7 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		4F01B0F724F729E3005B6CD7 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		4F01B0F924F72C1F005B6CD7 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		4F01B0FC24F72F69005B6CD7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5BB3B3168C2158D839EC31BA /* Pods-SpendR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendR.debug.xcconfig"; path = "Target Support Files/Pods-SpendR/Pods-SpendR.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				4F01B0F724F729E3005B6CD7 /* Storyboard.swift */,
+				4F01B0FC24F72F69005B6CD7 /* Constants.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				4F01B0B924F7115C005B6CD7 /* AppDelegate.swift in Sources */,
 				4F01B0F824F729E3005B6CD7 /* Storyboard.swift in Sources */,
 				4F01B0E824F71B2F005B6CD7 /* String+Extension.swift in Sources */,
+				4F01B0FD24F72F69005B6CD7 /* Constants.swift in Sources */,
 				4F01B0F524F726CA005B6CD7 /* HUD.swift in Sources */,
 				4F01B0E224F7154E005B6CD7 /* SignUpViewController.swift in Sources */,
 				4F01B0F324F721F0005B6CD7 /* AuthService.swift in Sources */,
