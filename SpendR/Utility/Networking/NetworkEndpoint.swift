@@ -7,7 +7,10 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 protocol NetworkEndpoint {
     var networkTask: NetworkTask { get }
+    var documentReference: DocumentReference { get }
+    var collectionReference: CollectionReference { get }
 }
