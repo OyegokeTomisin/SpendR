@@ -8,8 +8,6 @@
 
 import Foundation
 
-typealias NetworkRouterCompletion = ((Result<Any?, Error>) -> Void)
-
 protocol NetworkRouter: class {
     func request(_ route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion)
 }

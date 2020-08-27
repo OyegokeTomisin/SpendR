@@ -9,6 +9,8 @@
 import Foundation
 import FirebaseFirestore
 
+typealias NetworkRouterCompletion = ((Result<QuerySnapshot?, Error>) -> Void)
+
 protocol NetworkEndpoint {
     var networkTask: NetworkTask { get }
     var documentReference: DocumentReference { get }
