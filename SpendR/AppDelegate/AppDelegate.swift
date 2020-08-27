@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,9 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         FirebaseApp.configure()
+        setupAppRoot()
         return true
+    }
+
+    private func setupAppRoot(){
+        if Auth.auth().currentUser == nil {
+            changeRootViewController(to: .auth, with: AuthRootViewController.identifier)
+        } else {
+            changeRootViewController(to: .main, with: MainViewController.identifier)
+        }
     }
 
     func changeRootViewController(to storyboard: Storyboard, with identifier: String) {

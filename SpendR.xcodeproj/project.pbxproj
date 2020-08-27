@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4DF9808FF9D2612D31913269 /* Pods_SpendRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FA740DC688C88379AB9C95 /* Pods_SpendRTests.framework */; };
 		4F01B0B924F7115C005B6CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0B824F7115C005B6CD7 /* AppDelegate.swift */; };
-		4F01B0BD24F7115C005B6CD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0BC24F7115C005B6CD7 /* ViewController.swift */; };
 		4F01B0C024F7115C005B6CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F01B0BE24F7115C005B6CD7 /* Main.storyboard */; };
 		4F01B0C224F7115E005B6CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F01B0C124F7115E005B6CD7 /* Assets.xcassets */; };
 		4F01B0C524F7115E005B6CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F01B0C324F7115E005B6CD7 /* LaunchScreen.storyboard */; };
@@ -27,6 +26,12 @@
 		4F01B0F824F729E3005B6CD7 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0F724F729E3005B6CD7 /* Storyboard.swift */; };
 		4F01B0FA24F72C1F005B6CD7 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0F924F72C1F005B6CD7 /* UIViewController+Extension.swift */; };
 		4F01B0FD24F72F69005B6CD7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0FC24F72F69005B6CD7 /* Constants.swift */; };
+		4FE6A72624F8535C00AD9D2C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72524F8535C00AD9D2C /* Profile.storyboard */; };
+		4FE6A72824F8537C00AD9D2C /* Pots.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72724F8537C00AD9D2C /* Pots.storyboard */; };
+		4FE6A72A24F8539700AD9D2C /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72924F8539700AD9D2C /* History.storyboard */; };
+		4FE6A72C24F853A100AD9D2C /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72B24F853A100AD9D2C /* Dashboard.storyboard */; };
+		4FE6A73124F8555A00AD9D2C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6A73024F8555A00AD9D2C /* MainViewController.swift */; };
+		4FE6A73424F8598000AD9D2C /* AuthRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6A73324F8598000AD9D2C /* AuthRootViewController.swift */; };
 		CC5C8AD8F9477AE58EFDC0FB /* Pods_SpendR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222111FAEE949EC0BD0E1642 /* Pods_SpendR.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +53,6 @@
 		40FF8C6755B87EA5D46B112A /* Pods-SpendRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendRTests.debug.xcconfig"; path = "Target Support Files/Pods-SpendRTests/Pods-SpendRTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F01B0B524F7115C005B6CD7 /* SpendR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F01B0B824F7115C005B6CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F01B0BC24F7115C005B6CD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4F01B0BF24F7115C005B6CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F01B0C124F7115E005B6CD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F01B0C424F7115E005B6CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +73,12 @@
 		4F01B0F724F729E3005B6CD7 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		4F01B0F924F72C1F005B6CD7 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		4F01B0FC24F72F69005B6CD7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4FE6A72524F8535C00AD9D2C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		4FE6A72724F8537C00AD9D2C /* Pots.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pots.storyboard; sourceTree = "<group>"; };
+		4FE6A72924F8539700AD9D2C /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		4FE6A72B24F853A100AD9D2C /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		4FE6A73024F8555A00AD9D2C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4FE6A73324F8598000AD9D2C /* AuthRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRootViewController.swift; sourceTree = "<group>"; };
 		5BB3B3168C2158D839EC31BA /* Pods-SpendR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendR.debug.xcconfig"; path = "Target Support Files/Pods-SpendR/Pods-SpendR.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,9 +127,9 @@
 			children = (
 				4F01B0DB24F7137C005B6CD7 /* AppDelegate */,
 				4F01B0DC24F71486005B6CD7 /* Auth */,
+				4FE6A73224F856A000AD9D2C /* Main */,
 				4F01B0E624F71B15005B6CD7 /* Utility */,
-				4F01B0BC24F7115C005B6CD7 /* ViewController.swift */,
-				4F01B0BE24F7115C005B6CD7 /* Main.storyboard */,
+				4FE6A72D24F853B700AD9D2C /* Storyboard */,
 				4F01B0C124F7115E005B6CD7 /* Assets.xcassets */,
 				4F01B0C324F7115E005B6CD7 /* LaunchScreen.storyboard */,
 				4F01B0E424F71801005B6CD7 /* GoogleService-Info.plist */,
@@ -148,21 +158,21 @@
 		4F01B0DC24F71486005B6CD7 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				4F01B0DD24F714A4005B6CD7 /* Auth.storyboard */,
 				4F01B0E924F71C9E005B6CD7 /* UserAccount.swift */,
 				4F01B0EF24F71FAE005B6CD7 /* Requests */,
-				4F01B0E324F71585005B6CD7 /* VieControllers */,
+				4F01B0E324F71585005B6CD7 /* ViewControllers */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		4F01B0E324F71585005B6CD7 /* VieControllers */ = {
+		4F01B0E324F71585005B6CD7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4FE6A73324F8598000AD9D2C /* AuthRootViewController.swift */,
 				4F01B0E124F7154E005B6CD7 /* SignUpViewController.swift */,
 				4F01B0DF24F71541005B6CD7 /* LoginViewController.swift */,
 			);
-			path = VieControllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		4F01B0E624F71B15005B6CD7 /* Utility */ = {
@@ -217,6 +227,27 @@
 				4F01B0FC24F72F69005B6CD7 /* Constants.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		4FE6A72D24F853B700AD9D2C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4F01B0DD24F714A4005B6CD7 /* Auth.storyboard */,
+				4F01B0BE24F7115C005B6CD7 /* Main.storyboard */,
+				4FE6A72724F8537C00AD9D2C /* Pots.storyboard */,
+				4FE6A72524F8535C00AD9D2C /* Profile.storyboard */,
+				4FE6A72924F8539700AD9D2C /* History.storyboard */,
+				4FE6A72B24F853A100AD9D2C /* Dashboard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		4FE6A73224F856A000AD9D2C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4FE6A73024F8555A00AD9D2C /* MainViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		ED826FE867F75D81ACFC66C0 /* Frameworks */ = {
@@ -324,10 +355,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE6A72624F8535C00AD9D2C /* Profile.storyboard in Resources */,
 				4F01B0DE24F714A4005B6CD7 /* Auth.storyboard in Resources */,
+				4FE6A72824F8537C00AD9D2C /* Pots.storyboard in Resources */,
+				4FE6A72A24F8539700AD9D2C /* History.storyboard in Resources */,
 				4F01B0C524F7115E005B6CD7 /* LaunchScreen.storyboard in Resources */,
 				4F01B0E524F71801005B6CD7 /* GoogleService-Info.plist in Resources */,
 				4F01B0C224F7115E005B6CD7 /* Assets.xcassets in Resources */,
+				4FE6A72C24F853A100AD9D2C /* Dashboard.storyboard in Resources */,
 				4F01B0C024F7115C005B6CD7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,11 +465,12 @@
 			files = (
 				4F01B0FA24F72C1F005B6CD7 /* UIViewController+Extension.swift in Sources */,
 				4F01B0F124F71FC8005B6CD7 /* AuthRequestService.swift in Sources */,
+				4FE6A73424F8598000AD9D2C /* AuthRootViewController.swift in Sources */,
 				4F01B0E024F71541005B6CD7 /* LoginViewController.swift in Sources */,
-				4F01B0BD24F7115C005B6CD7 /* ViewController.swift in Sources */,
 				4F01B0B924F7115C005B6CD7 /* AppDelegate.swift in Sources */,
 				4F01B0F824F729E3005B6CD7 /* Storyboard.swift in Sources */,
 				4F01B0E824F71B2F005B6CD7 /* String+Extension.swift in Sources */,
+				4FE6A73124F8555A00AD9D2C /* MainViewController.swift in Sources */,
 				4F01B0FD24F72F69005B6CD7 /* Constants.swift in Sources */,
 				4F01B0F524F726CA005B6CD7 /* HUD.swift in Sources */,
 				4F01B0E224F7154E005B6CD7 /* SignUpViewController.swift in Sources */,
