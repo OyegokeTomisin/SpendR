@@ -8,10 +8,10 @@
 
 import Foundation
 
-class Router {
-
-    func request(task: NetworkTask) {
-        switch task {
+class Router<Endpoint: NetworkEndpoint>: NetworkRouter {
+    
+    func request(_ route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion) {
+        switch route.networkTask {
         case .create:
             create()
         case .read:
@@ -22,20 +22,20 @@ class Router {
             delete()
         }
     }
-
+    
     private func create() {
-
+        
     }
-
+    
     private func read() {
-
+        
     }
-
+    
     private func update() {
-
+        
     }
-
+    
     private func delete() {
-
+        
     }
 }
