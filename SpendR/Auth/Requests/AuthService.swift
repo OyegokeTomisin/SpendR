@@ -39,4 +39,8 @@ struct AuthService {
             }
         }
     }
+
+    func logutUserAccount(completion: @escaping (Result<Any?, Error>) -> Void) {
+        request.signOutUser(completion: completion)
+    }
 }

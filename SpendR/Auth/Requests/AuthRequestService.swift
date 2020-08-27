@@ -38,4 +38,14 @@ struct AuthRequestService {
             }
         }
     }
+
+    func signOutUser(completion: @escaping (Result<Any?, Error>) -> Void) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            completion(.success(nil))
+        } catch let error {
+            completion(.failure(error))
+        }
+    }
 }
