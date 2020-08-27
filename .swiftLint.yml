@@ -1,2 +1,5 @@
 excluded:
+- Pods
 - SpendR/AppDelegate
+disabled_rules:
+- trailing_whitespace

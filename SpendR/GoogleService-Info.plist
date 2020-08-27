@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>598439560403-9toh937qttmgdor54ld4bfg0cch490m7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.598439560403-9toh937qttmgdor54ld4bfg0cch490m7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCg_lNWKgKzKA1Tob3D59l1Xz0_01l_pJI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>598439560403</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.tomisin.SpendR</string>
+	<key>PROJECT_ID</key>
+	<string>spendr-fefbc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>spendr-fefbc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:598439560403:ios:5cdd5e8d85856e951a8026</string>
+	<key>DATABASE_URL</key>
+	<string>https://spendr-fefbc.firebaseio.com</string>
+</dict>
+</plist>
