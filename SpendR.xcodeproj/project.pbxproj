@@ -32,6 +32,10 @@
 		4FE6A72C24F853A100AD9D2C /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72B24F853A100AD9D2C /* Dashboard.storyboard */; };
 		4FE6A73124F8555A00AD9D2C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6A73024F8555A00AD9D2C /* MainViewController.swift */; };
 		4FE6A73424F8598000AD9D2C /* AuthRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6A73324F8598000AD9D2C /* AuthRootViewController.swift */; };
+		4FE6A73724F8610700AD9D2C /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6A73624F8610700AD9D2C /* NetworkTask.swift */; };
+		4FE6A73924F8614D00AD9D2C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6A73824F8614D00AD9D2C /* Router.swift */; };
+		4FE6A73B24F8625D00AD9D2C /* NetworkEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6A73A24F8625D00AD9D2C /* NetworkEndpoint.swift */; };
+		4FE6A73D24F8631700AD9D2C /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6A73C24F8631700AD9D2C /* NetworkRouter.swift */; };
 		CC5C8AD8F9477AE58EFDC0FB /* Pods_SpendR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222111FAEE949EC0BD0E1642 /* Pods_SpendR.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +83,10 @@
 		4FE6A72B24F853A100AD9D2C /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		4FE6A73024F8555A00AD9D2C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4FE6A73324F8598000AD9D2C /* AuthRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRootViewController.swift; sourceTree = "<group>"; };
+		4FE6A73624F8610700AD9D2C /* NetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
+		4FE6A73824F8614D00AD9D2C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4FE6A73A24F8625D00AD9D2C /* NetworkEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEndpoint.swift; sourceTree = "<group>"; };
+		4FE6A73C24F8631700AD9D2C /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
 		5BB3B3168C2158D839EC31BA /* Pods-SpendR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendR.debug.xcconfig"; path = "Target Support Files/Pods-SpendR/Pods-SpendR.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,6 +186,7 @@
 		4F01B0E624F71B15005B6CD7 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				4FE6A73524F860ED00AD9D2C /* Networking */,
 				4F01B0FB24F72D8C005B6CD7 /* Enum */,
 				4F01B0ED24F71F5C005B6CD7 /* Error */,
 				4F01B0EE24F71F61005B6CD7 /* Extension */,
@@ -248,6 +257,17 @@
 				4FE6A73024F8555A00AD9D2C /* MainViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		4FE6A73524F860ED00AD9D2C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4FE6A73824F8614D00AD9D2C /* Router.swift */,
+				4FE6A73624F8610700AD9D2C /* NetworkTask.swift */,
+				4FE6A73C24F8631700AD9D2C /* NetworkRouter.swift */,
+				4FE6A73A24F8625D00AD9D2C /* NetworkEndpoint.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		ED826FE867F75D81ACFC66C0 /* Frameworks */ = {
@@ -464,12 +484,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F01B0FA24F72C1F005B6CD7 /* UIViewController+Extension.swift in Sources */,
+				4FE6A73724F8610700AD9D2C /* NetworkTask.swift in Sources */,
 				4F01B0F124F71FC8005B6CD7 /* AuthRequestService.swift in Sources */,
 				4FE6A73424F8598000AD9D2C /* AuthRootViewController.swift in Sources */,
 				4F01B0E024F71541005B6CD7 /* LoginViewController.swift in Sources */,
 				4F01B0B924F7115C005B6CD7 /* AppDelegate.swift in Sources */,
 				4F01B0F824F729E3005B6CD7 /* Storyboard.swift in Sources */,
 				4F01B0E824F71B2F005B6CD7 /* String+Extension.swift in Sources */,
+				4FE6A73B24F8625D00AD9D2C /* NetworkEndpoint.swift in Sources */,
+				4FE6A73924F8614D00AD9D2C /* Router.swift in Sources */,
 				4FE6A73124F8555A00AD9D2C /* MainViewController.swift in Sources */,
 				4F01B0FD24F72F69005B6CD7 /* Constants.swift in Sources */,
 				4F01B0F524F726CA005B6CD7 /* HUD.swift in Sources */,
@@ -477,6 +500,7 @@
 				4F01B0F324F721F0005B6CD7 /* AuthService.swift in Sources */,
 				4F01B0EA24F71C9E005B6CD7 /* UserAccount.swift in Sources */,
 				4F01B0EC24F71CE7005B6CD7 /* UserAccountError.swift in Sources */,
+				4FE6A73D24F8631700AD9D2C /* NetworkRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

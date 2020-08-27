@@ -8,6 +8,7 @@ target 'SpendR' do
   # Pods for SpendR
     pod 'Firebase'
     pod 'FirebaseAuth'
+    pod 'FirebaseFirestoreSwift'
     pod 'SVProgressHUD'
     pod 'IQKeyboardManagerSwift'
 
