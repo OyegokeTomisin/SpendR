@@ -13,6 +13,7 @@ typealias NetworkRouterCompletion = ((Result<QuerySnapshot?, Error>) -> Void)
 
 protocol NetworkEndpoint {
     var networkTask: NetworkTask { get }
-    var documentReference: DocumentReference { get }
-    var collectionReference: CollectionReference { get }
+    var baseDocumentReference: DocumentReference? { get }
+    var documentReference: DocumentReference? { get }
+    var collectionReference: CollectionReference? { get }
 }
