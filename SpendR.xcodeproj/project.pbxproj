@@ -33,6 +33,7 @@
 		4F4C5EFB24FC6AB00087B5D4 /* TagAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5EFA24FC6AB00087B5D4 /* TagAPI.swift */; };
 		4F4C5EFC24FC6CDC0087B5D4 /* TagRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5EF824FC67CD0087B5D4 /* TagRequest.swift */; };
 		4F4C5EFD24FC6CE90087B5D4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6A73824F8614D00AD9D2C /* Router.swift */; };
+		4F4C5EFF24FC6F2D0087B5D4 /* AddTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5EFE24FC6F2D0087B5D4 /* AddTagViewController.swift */; };
 		4FE6A72624F8535C00AD9D2C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72524F8535C00AD9D2C /* Profile.storyboard */; };
 		4FE6A72824F8537C00AD9D2C /* Pots.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72724F8537C00AD9D2C /* Pots.storyboard */; };
 		4FE6A72A24F8539700AD9D2C /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72924F8539700AD9D2C /* History.storyboard */; };
@@ -89,6 +90,7 @@
 		4F4C5EF624FC644A0087B5D4 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		4F4C5EF824FC67CD0087B5D4 /* TagRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagRequest.swift; sourceTree = "<group>"; };
 		4F4C5EFA24FC6AB00087B5D4 /* TagAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagAPI.swift; sourceTree = "<group>"; };
+		4F4C5EFE24FC6F2D0087B5D4 /* AddTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTagViewController.swift; sourceTree = "<group>"; };
 		4FE6A72524F8535C00AD9D2C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		4FE6A72724F8537C00AD9D2C /* Pots.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pots.storyboard; sourceTree = "<group>"; };
 		4FE6A72924F8539700AD9D2C /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 				4F01B0DD24F714A4005B6CD7 /* Auth.storyboard */,
 				4F01B0BE24F7115C005B6CD7 /* Main.storyboard */,
 				4FE6A72724F8537C00AD9D2C /* Pots.storyboard */,
+				4F4C5EFE24FC6F2D0087B5D4 /* AddTagViewController.swift */,
 				4FE6A72524F8535C00AD9D2C /* Profile.storyboard */,
 				4FE6A72924F8539700AD9D2C /* History.storyboard */,
 				4FE6A72B24F853A100AD9D2C /* Dashboard.storyboard */,
@@ -530,6 +533,7 @@
 				4F4C5EF324FC62940087B5D4 /* EndpointData.swift in Sources */,
 				4F01B0F324F721F0005B6CD7 /* AuthService.swift in Sources */,
 				4F4C5EF724FC644A0087B5D4 /* Collection.swift in Sources */,
+				4F4C5EFF24FC6F2D0087B5D4 /* AddTagViewController.swift in Sources */,
 				4F01B0EA24F71C9E005B6CD7 /* UserAccount.swift in Sources */,
 				4F01B0EC24F71CE7005B6CD7 /* UserAccountError.swift in Sources */,
 				4FE6A73D24F8631700AD9D2C /* NetworkRouter.swift in Sources */,
