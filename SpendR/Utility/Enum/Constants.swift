@@ -13,8 +13,9 @@ enum MessageConstants {
 }
 
 enum ParamConstant: String {
+    case date
     case name
     case amount
-
+    
     var key: String { rawValue }
 }
