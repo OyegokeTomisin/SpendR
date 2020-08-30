@@ -3,3 +3,4 @@ excluded:
 - SpendR/AppDelegate
 disabled_rules:
 - trailing_whitespace
+- identifier_name
