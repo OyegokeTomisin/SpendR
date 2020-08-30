@@ -24,42 +24,58 @@ class Router<Endpoint: NetworkEndpoint>: NetworkRouter {
     }
 
     private func create(_ data: Parameter, route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion) {
-        route.documentReference.setData(data) { error in
-            if let error = error {
-                completion(.failure(error))
-            } else {
-                completion(.success(nil))
+        if let documentReference = route.documentReference {
+            documentReference.setData(data) { error in
+                if let error = error {
+                    completion(.failure(error))
+                } else {
+                    completion(.success(nil))
+                }
             }
+        } else {
+            completion(.failure(EndpointError.incompleteTask))
         }
     }
 
     private func read(route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion) {
-        route.collectionReference.addSnapshotListener { (querySnapshot, error) in
-            if let error = error {
-                completion(.failure(error))
-            } else {
-                completion(.success(querySnapshot))
+        if let collectionReference = route.collectionReference {
+            collectionReference.addSnapshotListener { (querySnapshot, error) in
+                if let error = error {
+                    completion(.failure(error))
+                } else {
+                    completion(.success(querySnapshot))
+                }
             }
+        } else {
+            completion(.failure(EndpointError.incompleteTask))
         }
     }
 
     private func update(_ data: Parameter, route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion) {
-        route.documentReference.updateData(data) { error in
-            if let error = error {
-                completion(.failure(error))
-            } else {
-                completion(.success(nil))
+        if let documentReference = route.documentReference {
+            documentReference.updateData(data) { error in
+                if let error = error {
+                    completion(.failure(error))
+                } else {
+                    completion(.success(nil))
+                }
             }
+        } else {
+            completion(.failure(EndpointError.incompleteTask))
         }
     }
 
     private func delete(route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion) {
-        route.documentReference.delete { error in
-            if let error = error {
-                completion(.failure(error))
-            } else {
-                completion(.success(nil))
+        if let documentReference = route.documentReference {
+            documentReference.delete { error in
+                if let error = error {
+                    completion(.failure(error))
+                } else {
+                    completion(.success(nil))
+                }
             }
+        } else {
+            completion(.failure(EndpointError.incompleteTask))
         }
     }
 }
