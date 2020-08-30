@@ -8,6 +8,7 @@
 
 import Foundation
 
-protocol NetworkRouter: class {
-    func request(_ route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion)
+protocol NetworkRouter: AnyObject {
+    associatedtype Endpoint: NetworkEndpoint
+    func request(_ route: Endpoint, completion: @escaping NetworkRouterCompletion)
 }

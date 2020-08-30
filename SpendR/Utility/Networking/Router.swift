@@ -10,7 +10,7 @@ import Foundation
 
 class Router<Endpoint: NetworkEndpoint>: NetworkRouter {
 
-    func request(_ route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion) {
+    func request(_ route: Endpoint, completion: @escaping NetworkRouterCompletion) {
         switch route.networkTask {
         case .create(let data):
             create(data, route: route, completion: completion)
@@ -23,7 +23,7 @@ class Router<Endpoint: NetworkEndpoint>: NetworkRouter {
         }
     }
 
-    private func create(_ data: Parameter, route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion) {
+    private func create(_ data: Parameter, route: Endpoint, completion: @escaping NetworkRouterCompletion) {
         if let documentReference = route.documentReference {
             documentReference.setData(data) { error in
                 if let error = error {
@@ -37,7 +37,7 @@ class Router<Endpoint: NetworkEndpoint>: NetworkRouter {
         }
     }
 
-    private func read(route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion) {
+    private func read(route: Endpoint, completion: @escaping NetworkRouterCompletion) {
         if let collectionReference = route.collectionReference {
             collectionReference.addSnapshotListener { (querySnapshot, error) in
                 if let error = error {
@@ -51,7 +51,7 @@ class Router<Endpoint: NetworkEndpoint>: NetworkRouter {
         }
     }
 
-    private func update(_ data: Parameter, route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion) {
+    private func update(_ data: Parameter, route: Endpoint, completion: @escaping NetworkRouterCompletion) {
         if let documentReference = route.documentReference {
             documentReference.updateData(data) { error in
                 if let error = error {
@@ -65,7 +65,7 @@ class Router<Endpoint: NetworkEndpoint>: NetworkRouter {
         }
     }
 
-    private func delete(route: NetworkEndpoint, completion: @escaping NetworkRouterCompletion) {
+    private func delete(route: Endpoint, completion: @escaping NetworkRouterCompletion) {
         if let documentReference = route.documentReference {
             documentReference.delete { error in
                 if let error = error {

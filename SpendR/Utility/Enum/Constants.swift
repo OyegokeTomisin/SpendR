@@ -11,3 +11,10 @@ import Foundation
 enum MessageConstants {
     static let errorTitle = "Oops!!"
 }
+
+enum ParamConstant: String {
+    case name
+    case amount
+
+    var key: String { rawValue }
+}
