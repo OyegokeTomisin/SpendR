@@ -41,6 +41,7 @@
 		4F4C5F0C24FC77B30087B5D4 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F0B24FC77B30087B5D4 /* Expense.swift */; };
 		4F4C5F0E24FC77BD0087B5D4 /* ExpenseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F0D24FC77BD0087B5D4 /* ExpenseAPI.swift */; };
 		4F4C5F1024FC77CD0087B5D4 /* ExpenseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F0F24FC77CD0087B5D4 /* ExpenseRequest.swift */; };
+		4F4C5F1224FC7D2A0087B5D4 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F1124FC7D2A0087B5D4 /* AddExpenseViewController.swift */; };
 		4FE6A72624F8535C00AD9D2C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72524F8535C00AD9D2C /* Profile.storyboard */; };
 		4FE6A72824F8537C00AD9D2C /* Pots.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72724F8537C00AD9D2C /* Pots.storyboard */; };
 		4FE6A72A24F8539700AD9D2C /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72924F8539700AD9D2C /* History.storyboard */; };
@@ -105,6 +106,7 @@
 		4F4C5F0B24FC77B30087B5D4 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		4F4C5F0D24FC77BD0087B5D4 /* ExpenseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseAPI.swift; sourceTree = "<group>"; };
 		4F4C5F0F24FC77CD0087B5D4 /* ExpenseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRequest.swift; sourceTree = "<group>"; };
+		4F4C5F1124FC7D2A0087B5D4 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
 		4FE6A72524F8535C00AD9D2C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		4FE6A72724F8537C00AD9D2C /* Pots.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pots.storyboard; sourceTree = "<group>"; };
 		4FE6A72924F8539700AD9D2C /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 				4FE6A72724F8537C00AD9D2C /* Pots.storyboard */,
 				4F4C5EFE24FC6F2D0087B5D4 /* AddTagViewController.swift */,
 				4F4C5F0824FC750B0087B5D4 /* AddBillViewController.swift */,
+				4F4C5F1124FC7D2A0087B5D4 /* AddExpenseViewController.swift */,
 				4FE6A72524F8535C00AD9D2C /* Profile.storyboard */,
 				4FE6A72924F8539700AD9D2C /* History.storyboard */,
 				4FE6A72B24F853A100AD9D2C /* Dashboard.storyboard */,
@@ -567,6 +570,7 @@
 				4F01B0F824F729E3005B6CD7 /* Storyboard.swift in Sources */,
 				4F01B0E824F71B2F005B6CD7 /* String+Extension.swift in Sources */,
 				4FE6A73B24F8625D00AD9D2C /* NetworkEndpoint.swift in Sources */,
+				4F4C5F1224FC7D2A0087B5D4 /* AddExpenseViewController.swift in Sources */,
 				4F4C5EEC24FC5C020087B5D4 /* EndpointError.swift in Sources */,
 				4FE6A73124F8555A00AD9D2C /* MainViewController.swift in Sources */,
 				4F4C5EF124FC624B0087B5D4 /* Tag.swift in Sources */,
