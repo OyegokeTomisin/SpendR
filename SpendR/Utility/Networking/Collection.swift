@@ -12,6 +12,7 @@ enum Collection: String {
     case users
     case tags
     case bill
+    case expense
 
     var identifier: String { rawValue }
 }
