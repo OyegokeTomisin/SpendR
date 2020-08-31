@@ -17,8 +17,8 @@ enum TagAPI: NetworkEndpoint {
     
     var networkTask: NetworkTask {
         switch self {
-        case .createTag(let data):
-            return .create(data: data.asParameter)
+        case .createTag(let tag):
+            return .create(data: tag.asParameter)
         case .deletetag:
             return .delete
         case .fetchTags:
