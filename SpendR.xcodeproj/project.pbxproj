@@ -37,6 +37,7 @@
 		4F4C5F0324FC70BA0087B5D4 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F0224FC70BA0087B5D4 /* Bill.swift */; };
 		4F4C5F0524FC70CC0087B5D4 /* BillAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F0424FC70CC0087B5D4 /* BillAPI.swift */; };
 		4F4C5F0724FC70D70087B5D4 /* BillRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F0624FC70D70087B5D4 /* BillRequest.swift */; };
+		4F4C5F0924FC750B0087B5D4 /* AddBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F0824FC750B0087B5D4 /* AddBillViewController.swift */; };
 		4FE6A72624F8535C00AD9D2C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72524F8535C00AD9D2C /* Profile.storyboard */; };
 		4FE6A72824F8537C00AD9D2C /* Pots.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72724F8537C00AD9D2C /* Pots.storyboard */; };
 		4FE6A72A24F8539700AD9D2C /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72924F8539700AD9D2C /* History.storyboard */; };
@@ -97,6 +98,7 @@
 		4F4C5F0224FC70BA0087B5D4 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		4F4C5F0424FC70CC0087B5D4 /* BillAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillAPI.swift; sourceTree = "<group>"; };
 		4F4C5F0624FC70D70087B5D4 /* BillRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillRequest.swift; sourceTree = "<group>"; };
+		4F4C5F0824FC750B0087B5D4 /* AddBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillViewController.swift; sourceTree = "<group>"; };
 		4FE6A72524F8535C00AD9D2C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		4FE6A72724F8537C00AD9D2C /* Pots.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pots.storyboard; sourceTree = "<group>"; };
 		4FE6A72924F8539700AD9D2C /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
@@ -153,8 +155,8 @@
 		4F01B0B724F7115C005B6CD7 /* SpendR */ = {
 			isa = PBXGroup;
 			children = (
-				4F4C5EEF24FC62340087B5D4 /* API */,
 				4F01B0DB24F7137C005B6CD7 /* AppDelegate */,
+				4F4C5EEF24FC62340087B5D4 /* API */,
 				4F01B0DC24F71486005B6CD7 /* Auth */,
 				4FE6A73224F856A000AD9D2C /* Main */,
 				4F01B0E624F71B15005B6CD7 /* Utility */,
@@ -296,6 +298,7 @@
 				4F01B0BE24F7115C005B6CD7 /* Main.storyboard */,
 				4FE6A72724F8537C00AD9D2C /* Pots.storyboard */,
 				4F4C5EFE24FC6F2D0087B5D4 /* AddTagViewController.swift */,
+				4F4C5F0824FC750B0087B5D4 /* AddBillViewController.swift */,
 				4FE6A72524F8535C00AD9D2C /* Profile.storyboard */,
 				4FE6A72924F8539700AD9D2C /* History.storyboard */,
 				4FE6A72B24F853A100AD9D2C /* Dashboard.storyboard */,
@@ -541,6 +544,7 @@
 				4FE6A73724F8610700AD9D2C /* NetworkTask.swift in Sources */,
 				4F01B0F124F71FC8005B6CD7 /* AuthRequestService.swift in Sources */,
 				4FE6A73424F8598000AD9D2C /* AuthRootViewController.swift in Sources */,
+				4F4C5F0924FC750B0087B5D4 /* AddBillViewController.swift in Sources */,
 				4F01B0E024F71541005B6CD7 /* LoginViewController.swift in Sources */,
 				4F01B0B924F7115C005B6CD7 /* AppDelegate.swift in Sources */,
 				4F01B0F824F729E3005B6CD7 /* Storyboard.swift in Sources */,

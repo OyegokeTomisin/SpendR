@@ -14,7 +14,7 @@ enum BillAPI: NetworkEndpoint {
     case fetchBills
     case createbill(bill: EndpointData)
     case deleteBill(billId: String)
-    
+
     var networkTask: NetworkTask {
         switch self {
         case .createbill(let data):
@@ -25,14 +25,14 @@ enum BillAPI: NetworkEndpoint {
             return .delete
         }
     }
-    
+
     var baseDocumentReference: DocumentReference? {
         if let user = Auth.auth().currentUser {
             return Firestore.firestore().collection(Collection.users.identifier).document(user.uid)
         }
         return nil
     }
-    
+
     var documentReference: DocumentReference? {
         switch self {
         case .createbill, .fetchBills:
@@ -41,7 +41,7 @@ enum BillAPI: NetworkEndpoint {
             return collectionReference?.document(path)
         }
     }
-    
+
     var collectionReference: CollectionReference? {
         return baseDocumentReference?.collection(Collection.bill.identifier)
     }
