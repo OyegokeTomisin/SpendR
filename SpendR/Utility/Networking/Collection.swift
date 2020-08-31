@@ -11,6 +11,7 @@ import Foundation
 enum Collection: String {
     case users
     case tags
+    case bill
 
     var identifier: String { rawValue }
 }
