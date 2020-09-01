@@ -44,6 +44,8 @@
 		4F4C5F1224FC7D2A0087B5D4 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F1124FC7D2A0087B5D4 /* AddExpenseViewController.swift */; };
 		4FABA78624FE209F00A0B7B6 /* TagService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78524FE209F00A0B7B6 /* TagService.swift */; };
 		4FABA78824FE20FD00A0B7B6 /* TagServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78724FE20FD00A0B7B6 /* TagServiceDelegate.swift */; };
+		4FABA78224FE16D400A0B7B6 /* ExpenseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */; };
+		4FABA78424FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */; };
 		4FE6A72624F8535C00AD9D2C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72524F8535C00AD9D2C /* Profile.storyboard */; };
 		4FE6A72824F8537C00AD9D2C /* Pots.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72724F8537C00AD9D2C /* Pots.storyboard */; };
 		4FE6A72A24F8539700AD9D2C /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72924F8539700AD9D2C /* History.storyboard */; };
@@ -111,6 +113,8 @@
 		4F4C5F1124FC7D2A0087B5D4 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
 		4FABA78524FE209F00A0B7B6 /* TagService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagService.swift; sourceTree = "<group>"; };
 		4FABA78724FE20FD00A0B7B6 /* TagServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagServiceDelegate.swift; sourceTree = "<group>"; };
+		4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseService.swift; sourceTree = "<group>"; };
+		4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseServiceDelegate.swift; sourceTree = "<group>"; };
 		4FE6A72524F8535C00AD9D2C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		4FE6A72724F8537C00AD9D2C /* Pots.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pots.storyboard; sourceTree = "<group>"; };
 		4FE6A72924F8539700AD9D2C /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
@@ -312,6 +316,8 @@
 				4F4C5F0B24FC77B30087B5D4 /* Expense.swift */,
 				4F4C5F0D24FC77BD0087B5D4 /* ExpenseAPI.swift */,
 				4F4C5F0F24FC77CD0087B5D4 /* ExpenseRequest.swift */,
+				4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */,
+				4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */,
 			);
 			path = Expense;
 			sourceTree = "<group>";
@@ -566,10 +572,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FABA78424FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift in Sources */,
 				4F01B0FA24F72C1F005B6CD7 /* UIViewController+Extension.swift in Sources */,
 				4FE6A73724F8610700AD9D2C /* NetworkTask.swift in Sources */,
 				4F01B0F124F71FC8005B6CD7 /* AuthRequestService.swift in Sources */,
 				4FE6A73424F8598000AD9D2C /* AuthRootViewController.swift in Sources */,
+				4FABA78224FE16D400A0B7B6 /* ExpenseService.swift in Sources */,
 				4F4C5F0924FC750B0087B5D4 /* AddBillViewController.swift in Sources */,
 				4F01B0E024F71541005B6CD7 /* LoginViewController.swift in Sources */,
 				4F01B0B924F7115C005B6CD7 /* AppDelegate.swift in Sources */,

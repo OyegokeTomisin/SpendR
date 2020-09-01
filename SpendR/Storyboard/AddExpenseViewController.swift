@@ -16,11 +16,30 @@ class AddExpenseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
 
-        // Do any additional setup after loading the view.
+    private func createExpense(with name: String, amount value: Int) {
+        let expense = Expense(name: name, amount: value, tag: nil)
+        let service = ExpenseService(delegate: self)
+        service.create(expense: expense)
     }
 
     @IBAction func createButtonTapped(_ sender: Any) {
+        guard let name = descriptiontTextField.text else { return }
+        guard let amount = amountTextField.text, let value = Int(amount) else { return }
+        createExpense(with: name, amount: value)
+        HUD.display()
+    }
+}
 
+extension AddExpenseViewController: ExpenseServiceDelegate {
+    func didCompleteRequestWithSuccess(expenses: [Expense]?) {
+        HUD.dismiss()
+        debugPrint(expenses ?? "expense is nil")
+    }
+
+    func didCompleteRequestWithFailure(error: String) {
+        HUD.dismiss()
+        showAlert(title: MessageConstants.errorTitle, message: error)
     }
 }
