@@ -8,21 +8,23 @@
 
 import UIKit
 
+typealias TransactionServiceDelegate = ExpenseServiceDelegate & BillServicedelegate
+
 class TransactionViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segment: UISegmentedControl!
 
     private var transaction: Transaction = .expense
+    private var expenseService: ExpenseService?
+    private var billService: BillService?
+    private var expenses = [Expense]()
+    private var bills = [Bill]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-    }
-
-    @IBAction func segmentValueChanged(_ sender: UISegmentedControl) {
-        transaction = sender.selectedSegmentIndex == 0 ? .expense : .bills
-        tableView.reloadData()
+        loadExpenseService()
     }
 
     private func setupTableView() {
@@ -30,24 +32,91 @@ class TransactionViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: TransactionTableViewCell.identifier)
         tableView.tableFooterView = UIView()
     }
+
+    private func loadExpenseService() {
+        let service = ExpenseService(delegate: self)
+        service.fetchExpenses()
+        HUD.display()
+    }
+
+    private func loadBillService() {
+        let service = BillService(delegate: self)
+        service.fetchBills()
+        HUD.display()
+    }
+
+    func deleteTransaction(at row: Int) {
+        switch transaction {
+        case .expense:
+            if let id = expenses[row].id {
+                expenseService?.deleteExpense(with: id)
+                HUD.display()
+            }
+        case .bills:
+            if let id = bills[row].id {
+                billService?.deleteBill(with: id)
+                HUD.display()
+            }
+        }
+    }
+
+    @IBAction func segmentValueChanged(_ sender: UISegmentedControl) {
+        transaction = sender.selectedSegmentIndex == 0 ? .expense : .bills
+        switch transaction {
+        case .expense:
+            expenseService == nil ? loadExpenseService() : tableView.reloadData()
+        case .bills:
+            billService == nil ? loadBillService() : tableView.reloadData()
+        }
+    }
 }
 
 extension TransactionViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return transaction == .expense ? 5 : 5
+        return transaction == .expense ? expenses.count : bills.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TransactionTableViewCell.identifier)
         guard let transactionCell = cell as? TransactionTableViewCell else { return UITableViewCell() }
         transaction == .expense ?
-            transactionCell.configure(with: Expense(name: "Expense", amount: 40)) :
-            transactionCell.configure(with: Bill(name: "Bill", amount: 300, date: Date()))
+            transactionCell.configure(with: expenses[indexPath.row]) :
+            transactionCell.configure(with: bills[indexPath.row])
         return transactionCell
     }
 }
 
 extension TransactionViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
 
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle,
+                   forRowAt indexPath: IndexPath) {
+        editingStyle == .delete ? deleteTransaction(at: indexPath.row) : nil
+    }
+}
+
+extension TransactionViewController: TransactionServiceDelegate {
+    func didCompleteRequestWithSuccess(expenses: [Expense]?) {
+        HUD.dismiss()
+        if let expenses = expenses {
+            self.expenses = expenses
+            tableView.reloadData()
+        }
+    }
+
+    func didCompleteRequestWithFailure(error: String) {
+        HUD.dismiss()
+        showAlert(title: MessageConstants.errorTitle, message: error)
+    }
+
+    func didCompleteRequestWithSuccess(bills: [Bill]?) {
+        HUD.dismiss()
+        if let bills = bills {
+            self.bills = bills
+            tableView.reloadData()
+        }
+    }
 }
