@@ -10,12 +10,19 @@ import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
-struct Expense {
+struct Expense: Codable {
     @DocumentID var id: String?
     var name: String
     var amount: Int
     var createdAt: Timestamp
     var tag: Tag?
+    
+    init(name: String, amount: Int, tag: Tag? = nil) {
+        self.name = name
+        self.amount = amount
+        self.tag = tag
+        self.createdAt = Timestamp(date: Date())
+    }
 }
 
 extension Expense: EndpointData {
