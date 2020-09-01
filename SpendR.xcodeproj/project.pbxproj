@@ -42,6 +42,8 @@
 		4F4C5F0E24FC77BD0087B5D4 /* ExpenseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F0D24FC77BD0087B5D4 /* ExpenseAPI.swift */; };
 		4F4C5F1024FC77CD0087B5D4 /* ExpenseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F0F24FC77CD0087B5D4 /* ExpenseRequest.swift */; };
 		4F4C5F1224FC7D2A0087B5D4 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F1124FC7D2A0087B5D4 /* AddExpenseViewController.swift */; };
+		4FABA78624FE209F00A0B7B6 /* TagService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78524FE209F00A0B7B6 /* TagService.swift */; };
+		4FABA78824FE20FD00A0B7B6 /* TagServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78724FE20FD00A0B7B6 /* TagServiceDelegate.swift */; };
 		4FABA78224FE16D400A0B7B6 /* ExpenseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */; };
 		4FABA78424FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */; };
 		4FE6A72624F8535C00AD9D2C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72524F8535C00AD9D2C /* Profile.storyboard */; };
@@ -109,6 +111,8 @@
 		4F4C5F0D24FC77BD0087B5D4 /* ExpenseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseAPI.swift; sourceTree = "<group>"; };
 		4F4C5F0F24FC77CD0087B5D4 /* ExpenseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRequest.swift; sourceTree = "<group>"; };
 		4F4C5F1124FC7D2A0087B5D4 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
+		4FABA78524FE209F00A0B7B6 /* TagService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagService.swift; sourceTree = "<group>"; };
+		4FABA78724FE20FD00A0B7B6 /* TagServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagServiceDelegate.swift; sourceTree = "<group>"; };
 		4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseService.swift; sourceTree = "<group>"; };
 		4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseServiceDelegate.swift; sourceTree = "<group>"; };
 		4FE6A72524F8535C00AD9D2C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -289,7 +293,9 @@
 			children = (
 				4F4C5EF024FC624B0087B5D4 /* Tag.swift */,
 				4F4C5EFA24FC6AB00087B5D4 /* TagAPI.swift */,
+				4FABA78524FE209F00A0B7B6 /* TagService.swift */,
 				4F4C5EF824FC67CD0087B5D4 /* TagRequest.swift */,
+				4FABA78724FE20FD00A0B7B6 /* TagServiceDelegate.swift */,
 			);
 			path = Tag;
 			sourceTree = "<group>";
@@ -596,8 +602,10 @@
 				4F01B0F324F721F0005B6CD7 /* AuthService.swift in Sources */,
 				4F4C5EF724FC644A0087B5D4 /* Collection.swift in Sources */,
 				4F4C5EFF24FC6F2D0087B5D4 /* AddTagViewController.swift in Sources */,
+				4FABA78824FE20FD00A0B7B6 /* TagServiceDelegate.swift in Sources */,
 				4F4C5F0E24FC77BD0087B5D4 /* ExpenseAPI.swift in Sources */,
 				4F4C5F0724FC70D70087B5D4 /* BillRequest.swift in Sources */,
+				4FABA78624FE209F00A0B7B6 /* TagService.swift in Sources */,
 				4F01B0EA24F71C9E005B6CD7 /* UserAccount.swift in Sources */,
 				4F01B0EC24F71CE7005B6CD7 /* UserAccountError.swift in Sources */,
 				4FE6A73D24F8631700AD9D2C /* NetworkRouter.swift in Sources */,
