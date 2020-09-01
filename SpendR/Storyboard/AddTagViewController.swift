@@ -18,6 +18,27 @@ class AddTagViewController: UIViewController {
     }
 
     @IBAction func createButtonTapped(_ sender: Any) {
-        
+        guard let name = descriptionTextField.text else { return }
+        guard let amount = amountTextField.text, let value = Int(amount) else { return }
+        createTag(with: name, amount: value)
+    }
+
+    private func createTag(with name: String, amount: Int) {
+        let tag = Tag(name: name, amount: amount)
+        let service = TagService(delegate: self)
+        service.create(tag: tag)
+        HUD.display()
+    }
+}
+
+extension AddTagViewController: TagServiceDelegate {
+    func didCompleteRequestWithSuccess(tags: [Tag]?) {
+        HUD.dismiss()
+        debugPrint(tags ?? "tag is nil")
+    }
+
+    func didCompleteRequestWithFailure(error: String) {
+        HUD.dismiss()
+        showAlert(title: MessageConstants.errorTitle, message: error)
     }
 }

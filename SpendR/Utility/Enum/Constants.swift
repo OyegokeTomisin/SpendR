@@ -16,6 +16,8 @@ enum ParamConstant: String {
     case date
     case name
     case amount
+    case createdAt
+    case tag
     
     var key: String { rawValue }
 }
