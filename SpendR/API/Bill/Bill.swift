@@ -15,6 +15,12 @@ struct Bill: Codable {
     var name: String
     var date: Timestamp
     var amount: Int
+
+    init(name: String, amount: Int, date: Date) {
+        self.name = name
+        self.amount = amount
+        self.date = Timestamp(date: date)
+    }
 }
 
 extension Bill: EndpointData {

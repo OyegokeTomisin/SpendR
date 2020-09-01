@@ -20,7 +20,7 @@ struct BillRequest {
         router.request(.fetchBills, completion: completion)
     }
 
-    func deleteBill(billId: String, completion: @escaping NetworkRouterCompletion) {
+    func deleteBill(with billId: String, completion: @escaping NetworkRouterCompletion) {
         router.request(.deleteBill(billId: billId), completion: completion)
     }
 }
