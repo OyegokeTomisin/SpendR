@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="-1274" y="-265"/>
         </scene>
-        <!--History-->
+        <!--Transaction-->
         <scene sceneID="S5s-En-ghT">
             <objects>
-                <viewControllerPlaceholder storyboardName="History" id="Ti0-7o-5fa" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Transaction" id="Ti0-7o-5fa" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="hDV-ie-OTO"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CxA-Sl-UmI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

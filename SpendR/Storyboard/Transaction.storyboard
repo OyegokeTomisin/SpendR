@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NZH-Yr-qWG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transaction View Controller-->
+        <scene sceneID="mfz-MM-Lra">
+            <objects>
+                <viewController id="D1z-st-GAY" customClass="TransactionViewController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yvi-et-GpL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qGa-pG-LDe">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="D1z-st-GAY" id="YpZ-iC-OMj"/>
+                                    <outlet property="delegate" destination="D1z-st-GAY" id="AsS-wu-gnK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qGa-pG-LDe" firstAttribute="leading" secondItem="K9b-hw-mEO" secondAttribute="leading" id="6zf-9a-BUT"/>
+                            <constraint firstItem="K9b-hw-mEO" firstAttribute="bottom" secondItem="qGa-pG-LDe" secondAttribute="bottom" id="HJE-JM-8YD"/>
+                            <constraint firstItem="qGa-pG-LDe" firstAttribute="trailing" secondItem="K9b-hw-mEO" secondAttribute="trailing" id="lFf-gm-4ex"/>
+                            <constraint firstItem="qGa-pG-LDe" firstAttribute="top" secondItem="K9b-hw-mEO" secondAttribute="top" id="tOr-b6-r94"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K9b-hw-mEO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5fK-TT-CpX">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="QD3-CV-aHp">
+                            <rect key="frame" x="109.5" y="5.5" width="195" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Expense"/>
+                                <segment title="Monthly bills"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentValueChanged:" destination="D1z-st-GAY" eventType="valueChanged" id="GCG-TL-qiH"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="segment" destination="QD3-CV-aHp" id="RBs-Xi-9mK"/>
+                        <outlet property="tableView" destination="qGa-pG-LDe" id="3BL-9n-Fv8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxY-k0-NzE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347.82608695652175" y="137.94642857142856"/>
+        </scene>
+        <!--Transaction-->
+        <scene sceneID="7Qg-Hj-auy">
+            <objects>
+                <navigationController id="NZH-Yr-qWG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Transaction" id="Osf-LU-SZI"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2T1-Wn-1r9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="D1z-st-GAY" kind="relationship" relationship="rootViewController" id="9Ed-P0-bXY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ae-ez-Uj7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-655" y="138"/>
+        </scene>
+    </scenes>
+</document>
