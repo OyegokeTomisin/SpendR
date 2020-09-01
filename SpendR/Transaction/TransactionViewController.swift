@@ -35,27 +35,27 @@ class TransactionViewController: UIViewController {
 
     private func loadExpenseService() {
         let service = ExpenseService(delegate: self)
-        service.fetchExpenses()
         HUD.display()
+        service.fetchExpenses()
     }
 
     private func loadBillService() {
         let service = BillService(delegate: self)
-        service.fetchBills()
         HUD.display()
+        service.fetchBills()
     }
 
     func deleteTransaction(at row: Int) {
         switch transaction {
         case .expense:
             if let id = expenses[row].id {
-                expenseService?.deleteExpense(with: id)
                 HUD.display()
+                expenseService?.deleteExpense(with: id)
             }
         case .bills:
             if let id = bills[row].id {
-                billService?.deleteBill(with: id)
                 HUD.display()
+                billService?.deleteBill(with: id)
             }
         }
     }
@@ -72,7 +72,6 @@ class TransactionViewController: UIViewController {
 }
 
 extension TransactionViewController: UITableViewDataSource {
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return transaction == .expense ? expenses.count : bills.count
     }
