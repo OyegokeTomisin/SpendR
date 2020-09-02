@@ -42,6 +42,8 @@
 		4F4C5F0E24FC77BD0087B5D4 /* ExpenseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F0D24FC77BD0087B5D4 /* ExpenseAPI.swift */; };
 		4F4C5F1024FC77CD0087B5D4 /* ExpenseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F0F24FC77CD0087B5D4 /* ExpenseRequest.swift */; };
 		4F4C5F1224FC7D2A0087B5D4 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F1124FC7D2A0087B5D4 /* AddExpenseViewController.swift */; };
+		4F8544E024FFFF2200A38CB7 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8544DE24FFFF2200A38CB7 /* TagCollectionViewCell.swift */; };
+		4F8544E124FFFF2200A38CB7 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8544DF24FFFF2200A38CB7 /* TagCollectionViewCell.xib */; };
 		4FABA78224FE16D400A0B7B6 /* ExpenseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */; };
 		4FABA78424FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */; };
 		4FABA78624FE209F00A0B7B6 /* TagService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78524FE209F00A0B7B6 /* TagService.swift */; };
@@ -51,7 +53,7 @@
 		4FABA78E24FE7E8B00A0B7B6 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78D24FE7E8B00A0B7B6 /* TransactionViewController.swift */; };
 		4FABA79324FE836500A0B7B6 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA79124FE836500A0B7B6 /* TransactionTableViewCell.swift */; };
 		4FABA79424FE836500A0B7B6 /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FABA79224FE836500A0B7B6 /* TransactionTableViewCell.xib */; };
-		4FABA79624FE899C00A0B7B6 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA79524FE899C00A0B7B6 /* UITableViewCell+Extension.swift */; };
+		4FABA79624FE899C00A0B7B6 /* Cell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA79524FE899C00A0B7B6 /* Cell+Extension.swift */; };
 		4FABA79824FE8DB200A0B7B6 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA79724FE8DB200A0B7B6 /* Transaction.swift */; };
 		4FE6A72624F8535C00AD9D2C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72524F8535C00AD9D2C /* Profile.storyboard */; };
 		4FE6A72A24F8539700AD9D2C /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72924F8539700AD9D2C /* Transaction.storyboard */; };
@@ -117,6 +119,8 @@
 		4F4C5F0D24FC77BD0087B5D4 /* ExpenseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseAPI.swift; sourceTree = "<group>"; };
 		4F4C5F0F24FC77CD0087B5D4 /* ExpenseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRequest.swift; sourceTree = "<group>"; };
 		4F4C5F1124FC7D2A0087B5D4 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
+		4F8544DE24FFFF2200A38CB7 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		4F8544DF24FFFF2200A38CB7 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
 		4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseService.swift; sourceTree = "<group>"; };
 		4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseServiceDelegate.swift; sourceTree = "<group>"; };
 		4FABA78524FE209F00A0B7B6 /* TagService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagService.swift; sourceTree = "<group>"; };
@@ -126,7 +130,7 @@
 		4FABA78D24FE7E8B00A0B7B6 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		4FABA79124FE836500A0B7B6 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		4FABA79224FE836500A0B7B6 /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
-		4FABA79524FE899C00A0B7B6 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		4FABA79524FE899C00A0B7B6 /* Cell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell+Extension.swift"; sourceTree = "<group>"; };
 		4FABA79724FE8DB200A0B7B6 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		4FE6A72524F8535C00AD9D2C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		4FE6A72924F8539700AD9D2C /* Transaction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transaction.storyboard; sourceTree = "<group>"; };
@@ -187,7 +191,6 @@
 				4F4C5EEF24FC62340087B5D4 /* API */,
 				4F01B0DC24F71486005B6CD7 /* Auth */,
 				4FE6A73224F856A000AD9D2C /* Main */,
-				4FABA79924FE8EF200A0B7B6 /* Transaction */,
 				4F01B0E624F71B15005B6CD7 /* Utility */,
 				4FE6A72D24F853B700AD9D2C /* Storyboard */,
 				4F01B0C124F7115E005B6CD7 /* Assets.xcassets */,
@@ -259,8 +262,8 @@
 		4F01B0EE24F71F61005B6CD7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4FABA79524FE899C00A0B7B6 /* Cell+Extension.swift */,
 				4F01B0E724F71B2F005B6CD7 /* String+Extension.swift */,
-				4FABA79524FE899C00A0B7B6 /* UITableViewCell+Extension.swift */,
 				4F01B0F924F72C1F005B6CD7 /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
@@ -338,6 +341,48 @@
 			path = Expense;
 			sourceTree = "<group>";
 		};
+		4F8544E225001E0900A38CB7 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				4F8544E525001E3A00A38CB7 /* Tags */,
+				4F8544E725001E6600A38CB7 /* Bills */,
+				4F8544E625001E5D00A38CB7 /* Expenses */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		4F8544E425001E1F00A38CB7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4F8544E525001E3A00A38CB7 /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				4F8544DE24FFFF2200A38CB7 /* TagCollectionViewCell.swift */,
+				4F4C5EFE24FC6F2D0087B5D4 /* AddTagViewController.swift */,
+			);
+			path = Tags;
+			sourceTree = "<group>";
+		};
+		4F8544E625001E5D00A38CB7 /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C5F1124FC7D2A0087B5D4 /* AddExpenseViewController.swift */,
+			);
+			path = Expenses;
+			sourceTree = "<group>";
+		};
+		4F8544E725001E6600A38CB7 /* Bills */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C5F0824FC750B0087B5D4 /* AddBillViewController.swift */,
+			);
+			path = Bills;
+			sourceTree = "<group>";
+		};
 		4FABA79924FE8EF200A0B7B6 /* Transaction */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,7 +390,8 @@
 				4FABA79124FE836500A0B7B6 /* TransactionTableViewCell.swift */,
 				4FABA78D24FE7E8B00A0B7B6 /* TransactionViewController.swift */,
 			);
-			path = Transaction;
+			name = Transaction;
+			path = ../Transaction;
 			sourceTree = "<group>";
 		};
 		4FE6A72D24F853B700AD9D2C /* Storyboard */ = {
@@ -353,12 +399,10 @@
 			children = (
 				4F01B0DD24F714A4005B6CD7 /* Auth.storyboard */,
 				4F01B0BE24F7115C005B6CD7 /* Main.storyboard */,
-				4F4C5EFE24FC6F2D0087B5D4 /* AddTagViewController.swift */,
-				4F4C5F0824FC750B0087B5D4 /* AddBillViewController.swift */,
-				4F4C5F1124FC7D2A0087B5D4 /* AddExpenseViewController.swift */,
 				4FE6A72524F8535C00AD9D2C /* Profile.storyboard */,
 				4FE6A72924F8539700AD9D2C /* Transaction.storyboard */,
 				4FABA79224FE836500A0B7B6 /* TransactionTableViewCell.xib */,
+				4F8544DF24FFFF2200A38CB7 /* TagCollectionViewCell.xib */,
 				4FE6A72B24F853A100AD9D2C /* Dashboard.storyboard */,
 			);
 			path = Storyboard;
@@ -368,6 +412,9 @@
 			isa = PBXGroup;
 			children = (
 				4FE6A73024F8555A00AD9D2C /* MainViewController.swift */,
+				4F8544E225001E0900A38CB7 /* Dashboard */,
+				4FABA79924FE8EF200A0B7B6 /* Transaction */,
+				4F8544E425001E1F00A38CB7 /* Profile */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -497,6 +544,7 @@
 				4F01B0C524F7115E005B6CD7 /* LaunchScreen.storyboard in Resources */,
 				4F01B0E524F71801005B6CD7 /* GoogleService-Info.plist in Resources */,
 				4F01B0C224F7115E005B6CD7 /* Assets.xcassets in Resources */,
+				4F8544E124FFFF2200A38CB7 /* TagCollectionViewCell.xib in Resources */,
 				4FE6A72C24F853A100AD9D2C /* Dashboard.storyboard in Resources */,
 				4F01B0C024F7115C005B6CD7 /* Main.storyboard in Resources */,
 			);
@@ -605,7 +653,7 @@
 				4F01B0F124F71FC8005B6CD7 /* AuthRequestService.swift in Sources */,
 				4FE6A73424F8598000AD9D2C /* AuthRootViewController.swift in Sources */,
 				4FABA78224FE16D400A0B7B6 /* ExpenseService.swift in Sources */,
-				4FABA79624FE899C00A0B7B6 /* UITableViewCell+Extension.swift in Sources */,
+				4FABA79624FE899C00A0B7B6 /* Cell+Extension.swift in Sources */,
 				4F4C5F0924FC750B0087B5D4 /* AddBillViewController.swift in Sources */,
 				4F01B0E024F71541005B6CD7 /* LoginViewController.swift in Sources */,
 				4F01B0B924F7115C005B6CD7 /* AppDelegate.swift in Sources */,
@@ -619,6 +667,7 @@
 				4FABA78E24FE7E8B00A0B7B6 /* TransactionViewController.swift in Sources */,
 				4FE6A73124F8555A00AD9D2C /* MainViewController.swift in Sources */,
 				4F4C5EF124FC624B0087B5D4 /* Tag.swift in Sources */,
+				4F8544E024FFFF2200A38CB7 /* TagCollectionViewCell.swift in Sources */,
 				4F4C5F0324FC70BA0087B5D4 /* Bill.swift in Sources */,
 				4F4C5EFB24FC6AB00087B5D4 /* TagAPI.swift in Sources */,
 				4F01B0FD24F72F69005B6CD7 /* Constants.swift in Sources */,

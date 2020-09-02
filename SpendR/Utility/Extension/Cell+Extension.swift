@@ -1,5 +1,5 @@
 //
-//  UITableViewCell+Extension.swift
+//  Cell+Extension.swift
 //  SpendR
 //
 //  Created by OYEGOKE TOMISIN on 01/09/2020.
@@ -11,5 +11,11 @@ import UIKit
 extension UITableViewCell {
     static var identifier: String {
         return String(describing: self)
+    }
+}
+
+extension UICollectionViewCell {
+    static var identifier: String {
+        String(describing: self)
     }
 }
