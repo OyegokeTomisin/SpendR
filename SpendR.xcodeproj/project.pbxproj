@@ -29,6 +29,8 @@
 		4F3AED062501865D00920A46 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AED052501865D00920A46 /* ProfileViewController.swift */; };
 		4F3AED0A25018C7E00920A46 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AED0925018C7E00920A46 /* UserDefaults+Extension.swift */; };
 		4F3AED0C25018E6600920A46 /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AED0B25018E6600920A46 /* TagViewController.swift */; };
+		4F3AED122501971900920A46 /* TagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AED102501971900920A46 /* TagTableViewCell.swift */; };
+		4F3AED132501971900920A46 /* TagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F3AED112501971900920A46 /* TagTableViewCell.xib */; };
 		4F4C5EEC24FC5C020087B5D4 /* EndpointError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5EEB24FC5C020087B5D4 /* EndpointError.swift */; };
 		4F4C5EF124FC624B0087B5D4 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5EF024FC624B0087B5D4 /* Tag.swift */; };
 		4F4C5EF324FC62940087B5D4 /* EndpointData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5EF224FC62940087B5D4 /* EndpointData.swift */; };
@@ -110,6 +112,8 @@
 		4F3AED052501865D00920A46 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4F3AED0925018C7E00920A46 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		4F3AED0B25018E6600920A46 /* TagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
+		4F3AED102501971900920A46 /* TagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTableViewCell.swift; sourceTree = "<group>"; };
+		4F3AED112501971900920A46 /* TagTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagTableViewCell.xib; sourceTree = "<group>"; };
 		4F4C5EEB24FC5C020087B5D4 /* EndpointError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointError.swift; sourceTree = "<group>"; };
 		4F4C5EF024FC624B0087B5D4 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		4F4C5EF224FC62940087B5D4 /* EndpointData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointData.swift; sourceTree = "<group>"; };
@@ -305,6 +309,7 @@
 		4F3AED0D2501925800920A46 /* Tag */ = {
 			isa = PBXGroup;
 			children = (
+				4F3AED102501971900920A46 /* TagTableViewCell.swift */,
 				4F3AED0B25018E6600920A46 /* TagViewController.swift */,
 			);
 			path = Tag;
@@ -419,6 +424,7 @@
 				4FE6A72524F8535C00AD9D2C /* Profile.storyboard */,
 				4FE6A72924F8539700AD9D2C /* Transaction.storyboard */,
 				4FABA79224FE836500A0B7B6 /* TransactionTableViewCell.xib */,
+				4F3AED112501971900920A46 /* TagTableViewCell.xib */,
 				4F8544DF24FFFF2200A38CB7 /* TagCollectionViewCell.xib */,
 				4FE6A72B24F853A100AD9D2C /* Dashboard.storyboard */,
 			);
@@ -554,6 +560,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F3AED132501971900920A46 /* TagTableViewCell.xib in Resources */,
 				4FABA79424FE836500A0B7B6 /* TransactionTableViewCell.xib in Resources */,
 				4FE6A72624F8535C00AD9D2C /* Profile.storyboard in Resources */,
 				4F01B0DE24F714A4005B6CD7 /* Auth.storyboard in Resources */,
@@ -695,6 +702,7 @@
 				4F4C5EFC24FC6CDC0087B5D4 /* TagRequest.swift in Sources */,
 				4F4C5F0C24FC77B30087B5D4 /* Expense.swift in Sources */,
 				4F4C5EFD24FC6CE90087B5D4 /* Router.swift in Sources */,
+				4F3AED122501971900920A46 /* TagTableViewCell.swift in Sources */,
 				4F01B0E224F7154E005B6CD7 /* SignUpViewController.swift in Sources */,
 				4F4C5EF324FC62940087B5D4 /* EndpointData.swift in Sources */,
 				4F01B0F324F721F0005B6CD7 /* AuthService.swift in Sources */,
