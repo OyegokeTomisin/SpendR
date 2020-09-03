@@ -13,6 +13,7 @@ class AddExpenseViewController: UIViewController {
     @IBOutlet weak var descriptiontTextField: UITextField!
     @IBOutlet weak var tagCollectionView: UICollectionView!
     @IBOutlet weak var amountTextField: UITextField!
+    @IBOutlet weak var tagStackView: UIStackView!
 
     private var tags = [Tag]()
     private var selectedTag: Tag?
@@ -22,11 +23,19 @@ class AddExpenseViewController: UIViewController {
         super.viewDidLoad()
         let nib = UINib(nibName: TagCollectionViewCell.identifier, bundle: nil)
         tagCollectionView.register(nib, forCellWithReuseIdentifier: TagCollectionViewCell.identifier)
+        fetchTags()
+    }
+
+    private func fetchTags() {
+        let service = TagService(delegate: self)
+        HUD.display()
+        service.fetchTags()
     }
 
     private func createExpense(with name: String, amount value: Int) {
         let expense = Expense(name: name, amount: value, tag: nil)
         let service = ExpenseService(delegate: self)
+        HUD.display()
         service.create(expense: expense)
     }
 
@@ -34,14 +43,13 @@ class AddExpenseViewController: UIViewController {
         guard let name = descriptiontTextField.text else { return }
         guard let amount = amountTextField.text, let value = Int(amount) else { return }
         createExpense(with: name, amount: value)
-        HUD.display()
     }
 }
 
 extension AddExpenseViewController: UICollectionViewDataSource, UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5 //tags.count
+        return tags.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) ->
@@ -50,7 +58,7 @@ extension AddExpenseViewController: UICollectionViewDataSource, UICollectionView
                 TagCollectionViewCell.identifier, for: indexPath) as? TagCollectionViewCell else {
                     return UICollectionViewCell()
             }
-            //cell.descriptionLabel.text = tags[indexPath.item].name
+            cell.descriptionLabel.text = tags[indexPath.item].name
             cell.toggleSelectedState()
             return cell
     }
@@ -70,11 +78,22 @@ extension AddExpenseViewController: UICollectionViewDataSource, UICollectionView
 extension AddExpenseViewController: ExpenseServiceDelegate {
     func didCompleteRequestWithSuccess(expenses: [Expense]?) {
         HUD.dismiss()
-        debugPrint(expenses ?? "expense is nil")
+        navigationController?.popViewController(animated: true)
     }
 
     func didCompleteRequestWithFailure(error: String) {
         HUD.dismiss()
         showAlert(title: MessageConstants.errorTitle, message: error)
+    }
+}
+
+extension AddExpenseViewController: TagServiceDelegate {
+    func didCompleteRequestWithSuccess(tags: [Tag]?) {
+        HUD.dismiss()
+        if let tags = tags {
+            self.tags = tags
+            tagStackView.isHidden = tags.isEmpty
+            tagCollectionView.reloadData()
+        }
     }
 }

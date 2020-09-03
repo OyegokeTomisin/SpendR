@@ -14,6 +14,7 @@ class AddBillViewController: UIViewController {
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var amountTextField: UITextField!
     @IBOutlet weak var dateTextField: UITextField!
+    @IBOutlet weak var tagStackView: UIStackView!
 
     private var tags = [Tag]()
     private var selectedTag: Tag?
@@ -25,6 +26,7 @@ class AddBillViewController: UIViewController {
         let nib = UINib(nibName: TagCollectionViewCell.identifier, bundle: nil)
         tagCollectionView.register(nib, forCellWithReuseIdentifier: TagCollectionViewCell.identifier)
         setDatePickerTextInput()
+        fetchTags()
     }
 
     private func setDatePickerTextInput() {
@@ -50,17 +52,23 @@ class AddBillViewController: UIViewController {
         createBill(name: name, amount: value, date: date)
     }
 
+    private func fetchTags() {
+        let service = TagService(delegate: self)
+        HUD.display()
+        service.fetchTags()
+    }
+
     private func createBill(name: String, amount: Int, date: Date) {
         let bill = Bill(name: name, amount: amount, date: date)
         let service = BillService(delegate: self)
-        service.create(bill: bill)
         HUD.display()
+        service.create(bill: bill)
     }
 }
 
 extension AddBillViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5 //tags.count
+        return tags.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) ->
@@ -70,7 +78,7 @@ extension AddBillViewController: UICollectionViewDataSource, UICollectionViewDel
                     return UICollectionViewCell()
             }
             cell.toggleSelectedState()
-            //cell.descriptionLabel.text = tags[indexPath.item].name
+            cell.descriptionLabel.text = tags[indexPath.item].name
             return cell
     }
 
@@ -89,11 +97,22 @@ extension AddBillViewController: UICollectionViewDataSource, UICollectionViewDel
 extension AddBillViewController: BillServicedelegate {
     func didCompleteRequestWithSuccess(bills: [Bill]?) {
         HUD.dismiss()
-        debugPrint(bills ?? "bill is nil")
+        navigationController?.popViewController(animated: true)
     }
 
     func didCompleteRequestWithFailure(error: String) {
         HUD.dismiss()
         showAlert(title: MessageConstants.errorTitle, message: error)
+    }
+}
+
+extension AddBillViewController: TagServiceDelegate {
+    func didCompleteRequestWithSuccess(tags: [Tag]?) {
+        HUD.dismiss()
+        if let tags = tags {
+            self.tags = tags
+            tagStackView.isHidden = tags.isEmpty
+            tagCollectionView.reloadData()
+        }
     }
 }

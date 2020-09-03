@@ -34,7 +34,7 @@ class AddTagViewController: UIViewController {
 extension AddTagViewController: TagServiceDelegate {
     func didCompleteRequestWithSuccess(tags: [Tag]?) {
         HUD.dismiss()
-        debugPrint(tags ?? "tag is nil")
+        navigationController?.popViewController(animated: true)
     }
 
     func didCompleteRequestWithFailure(error: String) {
