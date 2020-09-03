@@ -38,7 +38,7 @@ class AddBillViewController: UIViewController {
     }
 
     @objc private func datePickerValueChanged(sender: UIDatePicker) {
-        dateTextField = nil
+        dateTextField.text = nil
         selectedDate = sender.date
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM, d, yyyy"
@@ -49,7 +49,11 @@ class AddBillViewController: UIViewController {
         guard let name = descriptionTextField.text else { return }
         guard let amount = amountTextField.text, let value = Int(amount) else { return }
         guard let date = selectedDate else { return }
-        createBill(name: name, amount: value, date: date)
+        if let indexpath = selectedIndexPath {
+            createBill(name: name, amount: value, date: date, selectedTag: tags[indexpath.item])
+        } else {
+             createBill(name: name, amount: value, date: date, selectedTag: nil)
+        }
     }
 
     private func fetchTags() {
@@ -58,8 +62,8 @@ class AddBillViewController: UIViewController {
         service.fetchTags()
     }
 
-    private func createBill(name: String, amount: Int, date: Date) {
-        let bill = Bill(name: name, amount: amount, date: date)
+    private func createBill(name: String, amount: Int, date: Date, selectedTag: Tag?) {
+        let bill = Bill(name: name, amount: amount, date: date, tag: selectedTag)
         let service = BillService(delegate: self)
         HUD.display()
         service.create(bill: bill)

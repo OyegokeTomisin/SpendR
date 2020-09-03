@@ -32,8 +32,8 @@ class AddExpenseViewController: UIViewController {
         service.fetchTags()
     }
 
-    private func createExpense(with name: String, amount value: Int) {
-        let expense = Expense(name: name, amount: value, tag: nil)
+    private func createExpense(with name: String, amount value: Int, selectedTag: Tag?) {
+        let expense = Expense(name: name, amount: value, tag: selectedTag)
         let service = ExpenseService(delegate: self)
         HUD.display()
         service.create(expense: expense)
@@ -42,7 +42,11 @@ class AddExpenseViewController: UIViewController {
     @IBAction func createButtonTapped(_ sender: Any) {
         guard let name = descriptiontTextField.text else { return }
         guard let amount = amountTextField.text, let value = Int(amount) else { return }
-        createExpense(with: name, amount: value)
+        if let indexpath = selectedIndexPath {
+            createExpense(with: name, amount: value, selectedTag: tags[indexpath.item])
+        } else {
+            createExpense(with: name, amount: value, selectedTag: nil)
+        }
     }
 }
 

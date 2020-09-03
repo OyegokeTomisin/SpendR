@@ -33,7 +33,7 @@ class TransactionTableViewCell: UITableViewCell {
     func configure(with bill: Bill) {
         dateLabel.text = bill.date.dateValue().description
         titleLabel.text = bill.name
-        descriptionLabel.text = bill.name
+        descriptionLabel.text = bill.tag?.name ?? "General"
         amountLabel.text = "$ \(bill.amount)"
     }
 }

@@ -15,10 +15,12 @@ struct Bill: Codable {
     var name: String
     var date: Timestamp
     var amount: Int
+    var tag: Tag?
 
-    init(name: String, amount: Int, date: Date) {
+    init(name: String, amount: Int, date: Date, tag: Tag?) {
         self.name = name
         self.amount = amount
+        self.tag = tag
         self.date = Timestamp(date: date)
     }
 }
