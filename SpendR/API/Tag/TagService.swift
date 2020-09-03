@@ -36,7 +36,7 @@ struct TagService {
         }
     }
 
-    func deleteTag(with id: String){
+    func deleteTag(with id: String) {
         request.deleteTag(tagId: id) { result in
             switch result {
             case .success:

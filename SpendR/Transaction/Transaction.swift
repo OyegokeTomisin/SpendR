@@ -12,4 +12,3 @@ enum Transaction {
     case expense
     case bills
 }
-
