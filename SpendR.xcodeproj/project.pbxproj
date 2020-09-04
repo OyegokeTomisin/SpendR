@@ -51,6 +51,7 @@
 		4F8544E124FFFF2200A38CB7 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8544DF24FFFF2200A38CB7 /* TagCollectionViewCell.xib */; };
 		4F9B5B9C2501BBF300187BA6 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B5B9B2501BBF300187BA6 /* UITextField+Extension.swift */; };
 		4F9B5B9E2501BD3400187BA6 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B5B9D2501BD3400187BA6 /* Int+Extension.swift */; };
+		4F9B5BA52502417E00187BA6 /* ReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B5BA42502417E00187BA6 /* ReminderService.swift */; };
 		4FABA78224FE16D400A0B7B6 /* ExpenseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */; };
 		4FABA78424FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */; };
 		4FABA78624FE209F00A0B7B6 /* TagService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78524FE209F00A0B7B6 /* TagService.swift */; };
@@ -135,6 +136,7 @@
 		4F8544DF24FFFF2200A38CB7 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
 		4F9B5B9B2501BBF300187BA6 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		4F9B5B9D2501BD3400187BA6 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		4F9B5BA42502417E00187BA6 /* ReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderService.swift; sourceTree = "<group>"; };
 		4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseService.swift; sourceTree = "<group>"; };
 		4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseServiceDelegate.swift; sourceTree = "<group>"; };
 		4FABA78524FE209F00A0B7B6 /* TagService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagService.swift; sourceTree = "<group>"; };
@@ -346,6 +348,7 @@
 		4F4C5F0124FC70AC0087B5D4 /* Bill */ = {
 			isa = PBXGroup;
 			children = (
+				4F9B5BA32502415700187BA6 /* Reminder */,
 				4F4C5F0224FC70BA0087B5D4 /* Bill.swift */,
 				4F4C5F0424FC70CC0087B5D4 /* BillAPI.swift */,
 				4F4C5F0624FC70D70087B5D4 /* BillRequest.swift */,
@@ -409,6 +412,14 @@
 				4F4C5F0824FC750B0087B5D4 /* AddBillViewController.swift */,
 			);
 			path = Bills;
+			sourceTree = "<group>";
+		};
+		4F9B5BA32502415700187BA6 /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				4F9B5BA42502417E00187BA6 /* ReminderService.swift */,
+			);
+			path = Reminder;
 			sourceTree = "<group>";
 		};
 		4FABA79924FE8EF200A0B7B6 /* Transaction */ = {
@@ -693,6 +704,7 @@
 				4FE6A73B24F8625D00AD9D2C /* NetworkEndpoint.swift in Sources */,
 				4F4C5F1224FC7D2A0087B5D4 /* AddExpenseViewController.swift in Sources */,
 				4FABA79324FE836500A0B7B6 /* TransactionTableViewCell.swift in Sources */,
+				4F9B5BA52502417E00187BA6 /* ReminderService.swift in Sources */,
 				4F4C5EEC24FC5C020087B5D4 /* EndpointError.swift in Sources */,
 				4FABA78E24FE7E8B00A0B7B6 /* TransactionViewController.swift in Sources */,
 				4FE6A73124F8555A00AD9D2C /* MainViewController.swift in Sources */,

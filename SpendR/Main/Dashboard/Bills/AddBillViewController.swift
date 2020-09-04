@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class AddBillViewController: UIViewController {
 
@@ -68,8 +69,11 @@ class AddBillViewController: UIViewController {
     private func createBill(name: String, amount: Int, date: Date, selectedTag: Tag?) {
         let bill = Bill(name: name, amount: amount, date: date, tag: selectedTag)
         let service = BillService(delegate: self)
-        HUD.display()
-        service.create(bill: bill)
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.requestAuthorization(options: [.alert, .sound]) { (_, _) in
+            HUD.display()
+            service.create(bill: bill)
+        }
     }
 }
 
