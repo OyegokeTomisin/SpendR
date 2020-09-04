@@ -27,13 +27,13 @@ class TransactionTableViewCell: UITableViewCell {
         dateLabel.text = expense.createdAt.dateValue().description
         titleLabel.text = expense.name
         descriptionLabel.text = expense.tag?.name ?? "General"
-        amountLabel.text = "$ \(expense.amount)"
+        amountLabel.text = expense.amount.currencyFormat()
     }
 
     func configure(with bill: Bill) {
         dateLabel.text = bill.date.dateValue().description
         titleLabel.text = bill.name
         descriptionLabel.text = bill.tag?.name ?? "General"
-        amountLabel.text = "$ \(bill.amount)"
+        amountLabel.text = bill.amount.currencyFormat()
     }
 }

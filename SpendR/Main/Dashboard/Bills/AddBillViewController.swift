@@ -28,6 +28,9 @@ class AddBillViewController: UIViewController {
         setDatePickerTextInput()
         fetchTags()
     }
+    @IBAction func amountValueChanged(_ sender: UITextField) {
+        sender.currencyFormat()
+    }
 
     private func setDatePickerTextInput() {
         let datePicker = UIDatePicker()
@@ -47,12 +50,12 @@ class AddBillViewController: UIViewController {
 
     @IBAction func createButtonTapped(_ sender: UIButton) {
         guard let name = descriptionTextField.text else { return }
-        guard let amount = amountTextField.text, let value = Int(amount) else { return }
+        guard let amount = amountTextField.currencyFormat() else { return }
         guard let date = selectedDate else { return }
         if let indexpath = selectedIndexPath {
-            createBill(name: name, amount: value, date: date, selectedTag: tags[indexpath.item])
+            createBill(name: name, amount: amount, date: date, selectedTag: tags[indexpath.item])
         } else {
-             createBill(name: name, amount: value, date: date, selectedTag: nil)
+             createBill(name: name, amount: amount, date: date, selectedTag: nil)
         }
     }
 

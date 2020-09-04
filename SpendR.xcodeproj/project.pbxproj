@@ -49,6 +49,8 @@
 		4F4C5F1224FC7D2A0087B5D4 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F1124FC7D2A0087B5D4 /* AddExpenseViewController.swift */; };
 		4F8544E024FFFF2200A38CB7 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8544DE24FFFF2200A38CB7 /* TagCollectionViewCell.swift */; };
 		4F8544E124FFFF2200A38CB7 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8544DF24FFFF2200A38CB7 /* TagCollectionViewCell.xib */; };
+		4F9B5B9C2501BBF300187BA6 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B5B9B2501BBF300187BA6 /* UITextField+Extension.swift */; };
+		4F9B5B9E2501BD3400187BA6 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B5B9D2501BD3400187BA6 /* Int+Extension.swift */; };
 		4FABA78224FE16D400A0B7B6 /* ExpenseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */; };
 		4FABA78424FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */; };
 		4FABA78624FE209F00A0B7B6 /* TagService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78524FE209F00A0B7B6 /* TagService.swift */; };
@@ -131,6 +133,8 @@
 		4F4C5F1124FC7D2A0087B5D4 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
 		4F8544DE24FFFF2200A38CB7 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 		4F8544DF24FFFF2200A38CB7 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
+		4F9B5B9B2501BBF300187BA6 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		4F9B5B9D2501BD3400187BA6 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseService.swift; sourceTree = "<group>"; };
 		4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseServiceDelegate.swift; sourceTree = "<group>"; };
 		4FABA78524FE209F00A0B7B6 /* TagService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagService.swift; sourceTree = "<group>"; };
@@ -273,7 +277,9 @@
 			isa = PBXGroup;
 			children = (
 				4FABA79524FE899C00A0B7B6 /* Cell+Extension.swift */,
+				4F9B5B9D2501BD3400187BA6 /* Int+Extension.swift */,
 				4F01B0E724F71B2F005B6CD7 /* String+Extension.swift */,
+				4F9B5B9B2501BBF300187BA6 /* UITextField+Extension.swift */,
 				4F01B0F924F72C1F005B6CD7 /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
@@ -700,10 +706,12 @@
 				4F01B0F524F726CA005B6CD7 /* HUD.swift in Sources */,
 				4F4C5F0524FC70CC0087B5D4 /* BillAPI.swift in Sources */,
 				4F4C5EFC24FC6CDC0087B5D4 /* TagRequest.swift in Sources */,
+				4F9B5B9C2501BBF300187BA6 /* UITextField+Extension.swift in Sources */,
 				4F4C5F0C24FC77B30087B5D4 /* Expense.swift in Sources */,
 				4F4C5EFD24FC6CE90087B5D4 /* Router.swift in Sources */,
 				4F3AED122501971900920A46 /* TagTableViewCell.swift in Sources */,
 				4F01B0E224F7154E005B6CD7 /* SignUpViewController.swift in Sources */,
+				4F9B5B9E2501BD3400187BA6 /* Int+Extension.swift in Sources */,
 				4F4C5EF324FC62940087B5D4 /* EndpointData.swift in Sources */,
 				4F01B0F324F721F0005B6CD7 /* AuthService.swift in Sources */,
 				4F4C5EF724FC644A0087B5D4 /* Collection.swift in Sources */,

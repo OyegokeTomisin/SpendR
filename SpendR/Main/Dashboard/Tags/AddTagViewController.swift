@@ -11,7 +11,6 @@ import UIKit
 class AddTagViewController: UIViewController {
 
     @IBOutlet weak var descriptionTextField: UITextField!
-    @IBOutlet weak var amountTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,12 +18,11 @@ class AddTagViewController: UIViewController {
 
     @IBAction func createButtonTapped(_ sender: Any) {
         guard let name = descriptionTextField.text else { return }
-        guard let amount = amountTextField.text, let value = Int(amount) else { return }
-        createTag(with: name, amount: value)
+        createTag(with: name)
     }
 
-    private func createTag(with name: String, amount: Int) {
-        let tag = Tag(name: name, amount: amount)
+    private func createTag(with name: String) {
+        let tag = Tag(name: name)
         let service = TagService(delegate: self)
         service.create(tag: tag)
         HUD.display()
