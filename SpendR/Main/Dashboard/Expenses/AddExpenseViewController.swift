@@ -39,13 +39,17 @@ class AddExpenseViewController: UIViewController {
         service.create(expense: expense)
     }
 
+    @IBAction func amountValueChanged(_ sender: UITextField) {
+        sender.currencyFormat()
+    }
+    
     @IBAction func createButtonTapped(_ sender: Any) {
         guard let name = descriptiontTextField.text else { return }
-        guard let amount = amountTextField.text, let value = Int(amount) else { return }
+        guard let amount = amountTextField.currencyFormat() else { return }
         if let indexpath = selectedIndexPath {
-            createExpense(with: name, amount: value, selectedTag: tags[indexpath.item])
+            createExpense(with: name, amount: amount, selectedTag: tags[indexpath.item])
         } else {
-            createExpense(with: name, amount: value, selectedTag: nil)
+            createExpense(with: name, amount: amount, selectedTag: nil)
         }
     }
 }

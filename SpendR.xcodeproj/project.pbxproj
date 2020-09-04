@@ -26,6 +26,11 @@
 		4F01B0F824F729E3005B6CD7 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0F724F729E3005B6CD7 /* Storyboard.swift */; };
 		4F01B0FA24F72C1F005B6CD7 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0F924F72C1F005B6CD7 /* UIViewController+Extension.swift */; };
 		4F01B0FD24F72F69005B6CD7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0FC24F72F69005B6CD7 /* Constants.swift */; };
+		4F3AED062501865D00920A46 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AED052501865D00920A46 /* ProfileViewController.swift */; };
+		4F3AED0A25018C7E00920A46 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AED0925018C7E00920A46 /* UserDefaults+Extension.swift */; };
+		4F3AED0C25018E6600920A46 /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AED0B25018E6600920A46 /* TagViewController.swift */; };
+		4F3AED122501971900920A46 /* TagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AED102501971900920A46 /* TagTableViewCell.swift */; };
+		4F3AED132501971900920A46 /* TagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F3AED112501971900920A46 /* TagTableViewCell.xib */; };
 		4F4C5EEC24FC5C020087B5D4 /* EndpointError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5EEB24FC5C020087B5D4 /* EndpointError.swift */; };
 		4F4C5EF124FC624B0087B5D4 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5EF024FC624B0087B5D4 /* Tag.swift */; };
 		4F4C5EF324FC62940087B5D4 /* EndpointData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5EF224FC62940087B5D4 /* EndpointData.swift */; };
@@ -44,6 +49,8 @@
 		4F4C5F1224FC7D2A0087B5D4 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5F1124FC7D2A0087B5D4 /* AddExpenseViewController.swift */; };
 		4F8544E024FFFF2200A38CB7 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8544DE24FFFF2200A38CB7 /* TagCollectionViewCell.swift */; };
 		4F8544E124FFFF2200A38CB7 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8544DF24FFFF2200A38CB7 /* TagCollectionViewCell.xib */; };
+		4F9B5B9C2501BBF300187BA6 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B5B9B2501BBF300187BA6 /* UITextField+Extension.swift */; };
+		4F9B5B9E2501BD3400187BA6 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B5B9D2501BD3400187BA6 /* Int+Extension.swift */; };
 		4FABA78224FE16D400A0B7B6 /* ExpenseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */; };
 		4FABA78424FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */; };
 		4FABA78624FE209F00A0B7B6 /* TagService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78524FE209F00A0B7B6 /* TagService.swift */; };
@@ -104,6 +111,11 @@
 		4F01B0F724F729E3005B6CD7 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		4F01B0F924F72C1F005B6CD7 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		4F01B0FC24F72F69005B6CD7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4F3AED052501865D00920A46 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4F3AED0925018C7E00920A46 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		4F3AED0B25018E6600920A46 /* TagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
+		4F3AED102501971900920A46 /* TagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTableViewCell.swift; sourceTree = "<group>"; };
+		4F3AED112501971900920A46 /* TagTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagTableViewCell.xib; sourceTree = "<group>"; };
 		4F4C5EEB24FC5C020087B5D4 /* EndpointError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointError.swift; sourceTree = "<group>"; };
 		4F4C5EF024FC624B0087B5D4 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		4F4C5EF224FC62940087B5D4 /* EndpointData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointData.swift; sourceTree = "<group>"; };
@@ -121,6 +133,8 @@
 		4F4C5F1124FC7D2A0087B5D4 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
 		4F8544DE24FFFF2200A38CB7 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 		4F8544DF24FFFF2200A38CB7 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
+		4F9B5B9B2501BBF300187BA6 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		4F9B5B9D2501BD3400187BA6 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseService.swift; sourceTree = "<group>"; };
 		4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseServiceDelegate.swift; sourceTree = "<group>"; };
 		4FABA78524FE209F00A0B7B6 /* TagService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagService.swift; sourceTree = "<group>"; };
@@ -263,7 +277,9 @@
 			isa = PBXGroup;
 			children = (
 				4FABA79524FE899C00A0B7B6 /* Cell+Extension.swift */,
+				4F9B5B9D2501BD3400187BA6 /* Int+Extension.swift */,
 				4F01B0E724F71B2F005B6CD7 /* String+Extension.swift */,
+				4F9B5B9B2501BBF300187BA6 /* UITextField+Extension.swift */,
 				4F01B0F924F72C1F005B6CD7 /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
@@ -291,8 +307,18 @@
 			children = (
 				4F01B0F724F729E3005B6CD7 /* Storyboard.swift */,
 				4F01B0FC24F72F69005B6CD7 /* Constants.swift */,
+				4F3AED0925018C7E00920A46 /* UserDefaults+Extension.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		4F3AED0D2501925800920A46 /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				4F3AED102501971900920A46 /* TagTableViewCell.swift */,
+				4F3AED0B25018E6600920A46 /* TagViewController.swift */,
+			);
+			path = Tag;
 			sourceTree = "<group>";
 		};
 		4F4C5EEF24FC62340087B5D4 /* API */ = {
@@ -354,6 +380,8 @@
 		4F8544E425001E1F00A38CB7 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				4F3AED052501865D00920A46 /* ProfileViewController.swift */,
+				4F3AED0D2501925800920A46 /* Tag */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -402,6 +430,7 @@
 				4FE6A72524F8535C00AD9D2C /* Profile.storyboard */,
 				4FE6A72924F8539700AD9D2C /* Transaction.storyboard */,
 				4FABA79224FE836500A0B7B6 /* TransactionTableViewCell.xib */,
+				4F3AED112501971900920A46 /* TagTableViewCell.xib */,
 				4F8544DF24FFFF2200A38CB7 /* TagCollectionViewCell.xib */,
 				4FE6A72B24F853A100AD9D2C /* Dashboard.storyboard */,
 			);
@@ -537,6 +566,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F3AED132501971900920A46 /* TagTableViewCell.xib in Resources */,
 				4FABA79424FE836500A0B7B6 /* TransactionTableViewCell.xib in Resources */,
 				4FE6A72624F8535C00AD9D2C /* Profile.storyboard in Resources */,
 				4F01B0DE24F714A4005B6CD7 /* Auth.storyboard in Resources */,
@@ -671,23 +701,29 @@
 				4F4C5F0324FC70BA0087B5D4 /* Bill.swift in Sources */,
 				4F4C5EFB24FC6AB00087B5D4 /* TagAPI.swift in Sources */,
 				4F01B0FD24F72F69005B6CD7 /* Constants.swift in Sources */,
+				4F3AED0C25018E6600920A46 /* TagViewController.swift in Sources */,
 				4F4C5F1024FC77CD0087B5D4 /* ExpenseRequest.swift in Sources */,
 				4F01B0F524F726CA005B6CD7 /* HUD.swift in Sources */,
 				4F4C5F0524FC70CC0087B5D4 /* BillAPI.swift in Sources */,
 				4F4C5EFC24FC6CDC0087B5D4 /* TagRequest.swift in Sources */,
+				4F9B5B9C2501BBF300187BA6 /* UITextField+Extension.swift in Sources */,
 				4F4C5F0C24FC77B30087B5D4 /* Expense.swift in Sources */,
 				4F4C5EFD24FC6CE90087B5D4 /* Router.swift in Sources */,
+				4F3AED122501971900920A46 /* TagTableViewCell.swift in Sources */,
 				4F01B0E224F7154E005B6CD7 /* SignUpViewController.swift in Sources */,
+				4F9B5B9E2501BD3400187BA6 /* Int+Extension.swift in Sources */,
 				4F4C5EF324FC62940087B5D4 /* EndpointData.swift in Sources */,
 				4F01B0F324F721F0005B6CD7 /* AuthService.swift in Sources */,
 				4F4C5EF724FC644A0087B5D4 /* Collection.swift in Sources */,
 				4F4C5EFF24FC6F2D0087B5D4 /* AddTagViewController.swift in Sources */,
 				4FABA78824FE20FD00A0B7B6 /* TagServiceDelegate.swift in Sources */,
 				4F4C5F0E24FC77BD0087B5D4 /* ExpenseAPI.swift in Sources */,
+				4F3AED0A25018C7E00920A46 /* UserDefaults+Extension.swift in Sources */,
 				4F4C5F0724FC70D70087B5D4 /* BillRequest.swift in Sources */,
 				4FABA78C24FE265500A0B7B6 /* BillServiceDelegate.swift in Sources */,
 				4FABA78624FE209F00A0B7B6 /* TagService.swift in Sources */,
 				4F01B0EA24F71C9E005B6CD7 /* UserAccount.swift in Sources */,
+				4F3AED062501865D00920A46 /* ProfileViewController.swift in Sources */,
 				4F01B0EC24F71CE7005B6CD7 /* UserAccountError.swift in Sources */,
 				4FE6A73D24F8631700AD9D2C /* NetworkRouter.swift in Sources */,
 			);

@@ -10,6 +10,10 @@ import Foundation
 
 enum MessageConstants {
     static let errorTitle = "Oops!!"
+    static let okay = "Okay"
+    static let cancel = "Cancel"
+    static let logoutTitle = "Logout"
+    static let confirmLogout = "Are you sure you want to logout?"
 }
 
 enum ParamConstant: String {
