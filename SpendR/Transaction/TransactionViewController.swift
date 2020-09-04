@@ -101,7 +101,7 @@ extension TransactionViewController: TransactionServiceDelegate {
     func didCompleteRequestWithSuccess(expenses: [Expense]?) {
         HUD.dismiss()
         if let expenses = expenses {
-            self.expenses = expenses
+            self.expenses = expenses.sorted { $0.createdAt.dateValue() > $1.createdAt.dateValue() }
             tableView.reloadData()
         }
     }
@@ -114,7 +114,7 @@ extension TransactionViewController: TransactionServiceDelegate {
     func didCompleteRequestWithSuccess(bills: [Bill]?) {
         HUD.dismiss()
         if let bills = bills {
-            self.bills = bills
+            self.bills = bills.sorted { $0.date.dateValue() > $1.date.dateValue() }
             tableView.reloadData()
         }
     }
