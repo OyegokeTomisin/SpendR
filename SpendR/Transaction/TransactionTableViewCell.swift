@@ -24,16 +24,16 @@ class TransactionTableViewCell: UITableViewCell {
     }
 
     func configure(with expense: Expense) {
-        dateLabel.text = expense.createdAt.dateValue().description
+        dateLabel.text = expense.createdAt.dateValue().displayDate(in: .creation)
         titleLabel.text = expense.name
-        descriptionLabel.text = expense.tag?.name ?? "General"
+        descriptionLabel.text = expense.tag?.name ?? MessageConstants.general
         amountLabel.text = expense.amount.currencyFormat()
     }
 
     func configure(with bill: Bill) {
-        dateLabel.text = bill.date.dateValue().description
+        dateLabel.text = bill.date.dateValue().displayDate(in: .dueDate)
         titleLabel.text = bill.name
-        descriptionLabel.text = bill.tag?.name ?? "General"
+        descriptionLabel.text = bill.tag?.name ?? MessageConstants.general
         amountLabel.text = bill.amount.currencyFormat()
     }
 }

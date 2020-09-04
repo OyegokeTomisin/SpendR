@@ -114,7 +114,7 @@ extension TransactionViewController: TransactionServiceDelegate {
     func didCompleteRequestWithSuccess(bills: [Bill]?) {
         HUD.dismiss()
         if let bills = bills {
-            self.bills = bills.sorted { $0.date.dateValue() > $1.date.dateValue() }
+            self.bills = bills.sorted { $0.date.dateValue() < $1.date.dateValue() }
             tableView.reloadData()
         }
     }
