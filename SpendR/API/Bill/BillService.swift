@@ -30,6 +30,7 @@ struct BillService {
             case .success(let response):
                 let bills = response?.documents.compactMap({ try? $0.data(as: Bill.self) })
                 self.delegate?.didCompleteRequestWithSuccess(bills: bills)
+                self.createReminder(for: bills ?? [])
             case .failure(let error):
                 self.delegate?.didCompleteRequestWithFailure(error: error.localizedDescription)
             }
@@ -45,5 +46,10 @@ struct BillService {
                 self.delegate?.didCompleteRequestWithFailure(error: error.localizedDescription)
             }
         }
+    }
+
+    private func createReminder(for bills: [Bill]) {
+        let service = ReminderService(bills: bills)
+        service.start()
     }
 }

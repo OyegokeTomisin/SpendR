@@ -14,6 +14,7 @@ enum MessageConstants {
     static let cancel = "Cancel"
     static let logoutTitle = "Logout"
     static let confirmLogout = "Are you sure you want to logout?"
+    static let general = "General"
 }
 
 enum ParamConstant: String {
