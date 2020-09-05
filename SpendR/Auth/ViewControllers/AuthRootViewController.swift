@@ -12,5 +12,6 @@ class AuthRootViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setTransparentNavBar()
     }
 }
