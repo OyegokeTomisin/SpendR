@@ -11,12 +11,13 @@
         <!--Home-->
         <scene sceneID="Kxj-jA-18B">
             <objects>
-                <navigationController id="6Up-0P-nRg" customClass="DashboardNavigationController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="6Up-0P-nRg" customClass="BaseNavigationController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="WJ7-rY-BzC"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="oCu-Iq-pT2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Cell"/>
                         <color key="tintColor" name="ThemePurple"/>
                         <color key="barTintColor" name="Cell"/>
                         <textAttributes key="largeTitleTextAttributes">
@@ -36,7 +37,7 @@
             <objects>
                 <viewController id="kWU-4G-SRi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xuR-Es-3dS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2qX-bk-fKS">
@@ -93,7 +94,7 @@
             <objects>
                 <viewController title="Create Tag" id="4cn-Jc-z0u" customClass="AddTagViewController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zu7-o6-ua9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="VB4-Cy-jFf">
@@ -194,7 +195,7 @@
             <objects>
                 <viewController title="Bill Reminder" id="r4o-fG-3gF" customClass="AddBillViewController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rwx-cP-5r5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jiU-xH-h1p">
@@ -411,7 +412,7 @@
             <objects>
                 <viewController id="F3N-Us-Iso" customClass="AddExpenseViewController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="heE-u7-cTF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="zNu-If-7AH">
