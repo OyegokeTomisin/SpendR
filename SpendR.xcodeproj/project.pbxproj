@@ -64,6 +64,8 @@
 		4FABA79624FE899C00A0B7B6 /* Cell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA79524FE899C00A0B7B6 /* Cell+Extension.swift */; };
 		4FABA79824FE8DB200A0B7B6 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA79724FE8DB200A0B7B6 /* Transaction.swift */; };
 		4FBA6466250251B5000C5CCA /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBA6465250251B5000C5CCA /* Date+Extension.swift */; };
+		4FBA646825032666000C5CCA /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FBA646725032666000C5CCA /* Color.xcassets */; };
+		4FBA646A250329DE000C5CCA /* NavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBA6469250329DE000C5CCA /* NavigationController+Extension.swift */; };
 		4FE6A72624F8535C00AD9D2C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72524F8535C00AD9D2C /* Profile.storyboard */; };
 		4FE6A72A24F8539700AD9D2C /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72924F8539700AD9D2C /* Transaction.storyboard */; };
 		4FE6A72C24F853A100AD9D2C /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72B24F853A100AD9D2C /* Dashboard.storyboard */; };
@@ -150,6 +152,8 @@
 		4FABA79524FE899C00A0B7B6 /* Cell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell+Extension.swift"; sourceTree = "<group>"; };
 		4FABA79724FE8DB200A0B7B6 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		4FBA6465250251B5000C5CCA /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		4FBA646725032666000C5CCA /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		4FBA6469250329DE000C5CCA /* NavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationController+Extension.swift"; sourceTree = "<group>"; };
 		4FE6A72524F8535C00AD9D2C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		4FE6A72924F8539700AD9D2C /* Transaction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transaction.storyboard; sourceTree = "<group>"; };
 		4FE6A72B24F853A100AD9D2C /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 				4F01B0E624F71B15005B6CD7 /* Utility */,
 				4FE6A72D24F853B700AD9D2C /* Storyboard */,
 				4F01B0C124F7115E005B6CD7 /* Assets.xcassets */,
+				4FBA646725032666000C5CCA /* Color.xcassets */,
 				4F01B0C324F7115E005B6CD7 /* LaunchScreen.storyboard */,
 				4F01B0E424F71801005B6CD7 /* GoogleService-Info.plist */,
 				4F01B0C624F7115E005B6CD7 /* Info.plist */,
@@ -440,6 +445,7 @@
 			isa = PBXGroup;
 			children = (
 				4F01B0DD24F714A4005B6CD7 /* Auth.storyboard */,
+				4FBA6469250329DE000C5CCA /* NavigationController+Extension.swift */,
 				4F01B0BE24F7115C005B6CD7 /* Main.storyboard */,
 				4FE6A72524F8535C00AD9D2C /* Profile.storyboard */,
 				4FE6A72924F8539700AD9D2C /* Transaction.storyboard */,
@@ -585,6 +591,7 @@
 				4FE6A72624F8535C00AD9D2C /* Profile.storyboard in Resources */,
 				4F01B0DE24F714A4005B6CD7 /* Auth.storyboard in Resources */,
 				4FE6A72A24F8539700AD9D2C /* Transaction.storyboard in Resources */,
+				4FBA646825032666000C5CCA /* Color.xcassets in Resources */,
 				4F01B0C524F7115E005B6CD7 /* LaunchScreen.storyboard in Resources */,
 				4F01B0E524F71801005B6CD7 /* GoogleService-Info.plist in Resources */,
 				4F01B0C224F7115E005B6CD7 /* Assets.xcassets in Resources */,
@@ -707,6 +714,7 @@
 				4FE6A73B24F8625D00AD9D2C /* NetworkEndpoint.swift in Sources */,
 				4F4C5F1224FC7D2A0087B5D4 /* AddExpenseViewController.swift in Sources */,
 				4FABA79324FE836500A0B7B6 /* TransactionTableViewCell.swift in Sources */,
+				4FBA646A250329DE000C5CCA /* NavigationController+Extension.swift in Sources */,
 				4F9B5BA52502417E00187BA6 /* ReminderService.swift in Sources */,
 				4F4C5EEC24FC5C020087B5D4 /* EndpointError.swift in Sources */,
 				4FABA78E24FE7E8B00A0B7B6 /* TransactionViewController.swift in Sources */,
