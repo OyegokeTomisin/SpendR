@@ -62,13 +62,14 @@
         <!--Transaction-->
         <scene sceneID="7Qg-Hj-auy">
             <objects>
-                <navigationController id="NZH-Yr-qWG" customClass="DashboardNavigationController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="NZH-Yr-qWG" customClass="BaseNavigationController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Transaction" id="Osf-LU-SZI"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2T1-Wn-1r9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="Cell"/>
+                        <color key="tintColor" name="ThemePurple"/>
                         <color key="barTintColor" name="Cell"/>
                     </navigationBar>
                     <connections>
@@ -83,6 +84,9 @@
     <resources>
         <namedColor name="Cell">
             <color red="0.98199999332427979" green="0.99000000953674316" blue="0.9869999885559082" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="ThemePurple">
+            <color red="0.23899999260902405" green="0.23100000619888306" blue="0.30199998617172241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="ThemeWhite">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
