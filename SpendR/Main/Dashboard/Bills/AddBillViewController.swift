@@ -45,7 +45,7 @@ class AddBillViewController: UIViewController {
         dateTextField.text = nil
         selectedDate = sender.date
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMM, d, yyyy"
+        formatter.dateFormat = "MMM d, yyyy"
         dateTextField.text = formatter.string(from: sender.date)
     }
 

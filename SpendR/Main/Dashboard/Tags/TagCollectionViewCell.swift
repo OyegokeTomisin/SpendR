@@ -18,6 +18,8 @@ class TagCollectionViewCell: UICollectionViewCell {
     }
 
     func toggleSelectedState(to selected: Bool = false) {
-        tagView.backgroundColor = selected ? .systemTeal : .systemYellow
+        tagView.layer.borderWidth = selected ? 0 : 1
+        tagView.layer.borderColor = selected ? UIColor.clear.cgColor : UIColor(named: "ThemePurple")?.cgColor
+        tagView.backgroundColor = selected ? UIColor(named: "ThemeYellow") : UIColor(named: "ThemePurple")
     }
 }

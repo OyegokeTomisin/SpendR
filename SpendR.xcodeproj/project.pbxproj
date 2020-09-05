@@ -52,6 +52,7 @@
 		4F9B5B9C2501BBF300187BA6 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B5B9B2501BBF300187BA6 /* UITextField+Extension.swift */; };
 		4F9B5B9E2501BD3400187BA6 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B5B9D2501BD3400187BA6 /* Int+Extension.swift */; };
 		4F9B5BA52502417E00187BA6 /* ReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B5BA42502417E00187BA6 /* ReminderService.swift */; };
+		4FA53067250404550083A71D /* DashboardNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA53066250404550083A71D /* DashboardNavigationController.swift */; };
 		4FABA78224FE16D400A0B7B6 /* ExpenseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */; };
 		4FABA78424FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */; };
 		4FABA78624FE209F00A0B7B6 /* TagService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78524FE209F00A0B7B6 /* TagService.swift */; };
@@ -140,6 +141,7 @@
 		4F9B5B9B2501BBF300187BA6 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		4F9B5B9D2501BD3400187BA6 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		4F9B5BA42502417E00187BA6 /* ReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderService.swift; sourceTree = "<group>"; };
+		4FA53066250404550083A71D /* DashboardNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardNavigationController.swift; sourceTree = "<group>"; };
 		4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseService.swift; sourceTree = "<group>"; };
 		4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseServiceDelegate.swift; sourceTree = "<group>"; };
 		4FABA78524FE209F00A0B7B6 /* TagService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagService.swift; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 				4F01B0E724F71B2F005B6CD7 /* String+Extension.swift */,
 				4F9B5B9B2501BBF300187BA6 /* UITextField+Extension.swift */,
 				4F01B0F924F72C1F005B6CD7 /* UIViewController+Extension.swift */,
+				4FBA6469250329DE000C5CCA /* NavigationController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 		4F8544E225001E0900A38CB7 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				4FA53066250404550083A71D /* DashboardNavigationController.swift */,
 				4F8544E525001E3A00A38CB7 /* Tags */,
 				4F8544E725001E6600A38CB7 /* Bills */,
 				4F8544E625001E5D00A38CB7 /* Expenses */,
@@ -445,7 +449,6 @@
 			isa = PBXGroup;
 			children = (
 				4F01B0DD24F714A4005B6CD7 /* Auth.storyboard */,
-				4FBA6469250329DE000C5CCA /* NavigationController+Extension.swift */,
 				4F01B0BE24F7115C005B6CD7 /* Main.storyboard */,
 				4FE6A72524F8535C00AD9D2C /* Profile.storyboard */,
 				4FE6A72924F8539700AD9D2C /* Transaction.storyboard */,
@@ -737,6 +740,7 @@
 				4F9B5B9E2501BD3400187BA6 /* Int+Extension.swift in Sources */,
 				4F4C5EF324FC62940087B5D4 /* EndpointData.swift in Sources */,
 				4F01B0F324F721F0005B6CD7 /* AuthService.swift in Sources */,
+				4FA53067250404550083A71D /* DashboardNavigationController.swift in Sources */,
 				4F4C5EF724FC644A0087B5D4 /* Collection.swift in Sources */,
 				4F4C5EFF24FC6F2D0087B5D4 /* AddTagViewController.swift in Sources */,
 				4FBA6466250251B5000C5CCA /* Date+Extension.swift in Sources */,
@@ -911,6 +915,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9S6683TC8T;
 				INFOPLIST_FILE = SpendR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -929,6 +934,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9S6683TC8T;
 				INFOPLIST_FILE = SpendR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
