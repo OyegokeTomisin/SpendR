@@ -8,11 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile-->
+        <!--Base Navigation Controller-->
         <scene sceneID="xDy-yN-aKk">
             <objects>
                 <navigationController id="IYi-Fi-9C1" customClass="BaseNavigationController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="aKq-pw-yxG"/>
+                    <tabBarItem key="tabBarItem" title="" image="Profile" id="aKq-pw-yxG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="VU9-sj-UDW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -290,6 +290,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Profile" width="30" height="30"/>
         <image name="link" catalog="system" width="128" height="116"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <namedColor name="Cell">

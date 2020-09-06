@@ -53,6 +53,7 @@
 		4F9B5B9E2501BD3400187BA6 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B5B9D2501BD3400187BA6 /* Int+Extension.swift */; };
 		4F9B5BA52502417E00187BA6 /* ReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B5BA42502417E00187BA6 /* ReminderService.swift */; };
 		4FA53067250404550083A71D /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA53066250404550083A71D /* BaseNavigationController.swift */; };
+		4FAA73EB2504CC6E004065E2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA73EA2504CC6E004065E2 /* DashboardViewController.swift */; };
 		4FABA78224FE16D400A0B7B6 /* ExpenseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */; };
 		4FABA78424FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */; };
 		4FABA78624FE209F00A0B7B6 /* TagService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABA78524FE209F00A0B7B6 /* TagService.swift */; };
@@ -142,6 +143,7 @@
 		4F9B5B9D2501BD3400187BA6 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		4F9B5BA42502417E00187BA6 /* ReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderService.swift; sourceTree = "<group>"; };
 		4FA53066250404550083A71D /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		4FAA73EA2504CC6E004065E2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		4FABA78124FE16D400A0B7B6 /* ExpenseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseService.swift; sourceTree = "<group>"; };
 		4FABA78324FE1AF500A0B7B6 /* ExpenseServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseServiceDelegate.swift; sourceTree = "<group>"; };
 		4FABA78524FE209F00A0B7B6 /* TagService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagService.swift; sourceTree = "<group>"; };
@@ -287,9 +289,9 @@
 		4F01B0EE24F71F61005B6CD7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4F9B5B9D2501BD3400187BA6 /* Int+Extension.swift */,
 				4FABA79524FE899C00A0B7B6 /* Cell+Extension.swift */,
 				4FBA6465250251B5000C5CCA /* Date+Extension.swift */,
-				4F9B5B9D2501BD3400187BA6 /* Int+Extension.swift */,
 				4F01B0E724F71B2F005B6CD7 /* String+Extension.swift */,
 				4F9B5B9B2501BBF300187BA6 /* UITextField+Extension.swift */,
 				4F01B0F924F72C1F005B6CD7 /* UIViewController+Extension.swift */,
@@ -384,7 +386,7 @@
 		4F8544E225001E0900A38CB7 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				4FA53066250404550083A71D /* BaseNavigationController.swift */,
+				4FAA73EA2504CC6E004065E2 /* DashboardViewController.swift */,
 				4F8544E525001E3A00A38CB7 /* Tags */,
 				4F8544E725001E6600A38CB7 /* Bills */,
 				4F8544E625001E5D00A38CB7 /* Expenses */,
@@ -464,6 +466,7 @@
 			isa = PBXGroup;
 			children = (
 				4FE6A73024F8555A00AD9D2C /* MainViewController.swift */,
+				4FA53066250404550083A71D /* BaseNavigationController.swift */,
 				4F8544E225001E0900A38CB7 /* Dashboard */,
 				4FABA79924FE8EF200A0B7B6 /* Transaction */,
 				4F8544E425001E1F00A38CB7 /* Profile */,
@@ -752,6 +755,7 @@
 				4FABA78624FE209F00A0B7B6 /* TagService.swift in Sources */,
 				4F01B0EA24F71C9E005B6CD7 /* UserAccount.swift in Sources */,
 				4F3AED062501865D00920A46 /* ProfileViewController.swift in Sources */,
+				4FAA73EB2504CC6E004065E2 /* DashboardViewController.swift in Sources */,
 				4F01B0EC24F71CE7005B6CD7 /* UserAccountError.swift in Sources */,
 				4FE6A73D24F8631700AD9D2C /* NetworkRouter.swift in Sources */,
 			);
