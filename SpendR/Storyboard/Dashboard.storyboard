@@ -330,7 +330,7 @@
                                                                                 <color key="textColor" name="Label"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bg-RV-n7Z">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="4bg-RV-n7Z">
                                                                                 <rect key="frame" x="0.0" y="27" width="98" height="21.5"/>
                                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                                                                 <color key="textColor" name="ThemeWhite"/>
@@ -375,7 +375,7 @@
                                                                                 <color key="textColor" name="Label"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZT-mq-tED">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="xZT-mq-tED">
                                                                                 <rect key="frame" x="0.0" y="27" width="98" height="21.5"/>
                                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                                                                 <color key="textColor" name="ThemeWhite"/>
@@ -420,7 +420,7 @@
                                                                                 <color key="textColor" name="Label"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUn-h6-QiP">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="DUn-h6-QiP">
                                                                                 <rect key="frame" x="0.0" y="27" width="98" height="21.5"/>
                                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                                                                 <color key="textColor" name="ThemeWhite"/>

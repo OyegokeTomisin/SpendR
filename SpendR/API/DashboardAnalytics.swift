@@ -14,7 +14,7 @@ protocol DashboardAnalyticsDelegate: class {
 }
 
 typealias TaskCompletion = () -> Void
-typealias TagSpend = (name: String, amount: Int)
+typealias TagSpend = (name: String?, amount: Int)
 typealias TopTagSpend = (first: TagSpend?, second: TagSpend?, third: TagSpend?)
 
 class DashboardAnalytics {
@@ -45,7 +45,34 @@ class DashboardAnalytics {
     }
 
     private func calculateTopCategorySpend(expenses: [Expense]) -> TopTagSpend {
-        return (nil, nil, nil)
+        let group = Dictionary(grouping: expenses) { expenses -> String in
+            return expenses.tag?.name ?? ""
+        }
+
+        var first: TagSpend?
+        var second: TagSpend?
+        var third: TagSpend?
+
+        var topCategorySpend: [TagSpend] = group.map {
+            return (group[$0.key]?.first?.tag?.name, calculateExpenseTotal(expenses: $0.value))
+        }
+
+        topCategorySpend.sort { $0.amount > $1.amount }
+
+        switch topCategorySpend.count {
+        case 1:
+            first = topCategorySpend[0]
+        case 2:
+            first = topCategorySpend[0]
+            second = topCategorySpend[1]
+        case 3:
+            first = topCategorySpend[0]
+            second = topCategorySpend[1]
+            third = topCategorySpend[2]
+        default:
+             break
+        }
+        return (first: first, second: second, third: third)
     }
 
     private func fetchExpenses(completion: @escaping TaskCompletion) {
