@@ -59,11 +59,11 @@
             </objects>
             <point key="canvasLocation" x="347.82608695652175" y="137.94642857142856"/>
         </scene>
-        <!--Transaction-->
+        <!--Base Navigation Controller-->
         <scene sceneID="7Qg-Hj-auy">
             <objects>
                 <navigationController id="NZH-Yr-qWG" customClass="BaseNavigationController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Transaction" id="Osf-LU-SZI"/>
+                    <tabBarItem key="tabBarItem" title="" image="History" id="Osf-LU-SZI"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2T1-Wn-1r9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -82,6 +82,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="History" width="30" height="30"/>
         <namedColor name="Cell">
             <color red="0.98199999332427979" green="0.99000000953674316" blue="0.9869999885559082" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

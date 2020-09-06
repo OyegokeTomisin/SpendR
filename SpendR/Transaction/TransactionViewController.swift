@@ -34,15 +34,15 @@ class TransactionViewController: UIViewController {
     }
 
     private func loadExpenseService() {
-        let service = ExpenseService(delegate: self)
+        expenseService = ExpenseService(delegate: self)
         HUD.display()
-        service.fetchExpenses()
+        expenseService?.fetchExpenses()
     }
 
     private func loadBillService() {
-        let service = BillService(delegate: self)
+        billService = BillService(delegate: self)
         HUD.display()
-        service.fetchBills()
+        billService?.fetchBills()
     }
 
     func deleteTransaction(at row: Int) {
