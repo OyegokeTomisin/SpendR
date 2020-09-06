@@ -26,6 +26,7 @@
 		4F01B0F824F729E3005B6CD7 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0F724F729E3005B6CD7 /* Storyboard.swift */; };
 		4F01B0FA24F72C1F005B6CD7 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0F924F72C1F005B6CD7 /* UIViewController+Extension.swift */; };
 		4F01B0FD24F72F69005B6CD7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0FC24F72F69005B6CD7 /* Constants.swift */; };
+		4F24EAAB25056E74009E11BE /* DashboardAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F24EAAA25056E74009E11BE /* DashboardAnalytics.swift */; };
 		4F3AED062501865D00920A46 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AED052501865D00920A46 /* ProfileViewController.swift */; };
 		4F3AED0A25018C7E00920A46 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AED0925018C7E00920A46 /* UserDefaults+Extension.swift */; };
 		4F3AED0C25018E6600920A46 /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AED0B25018E6600920A46 /* TagViewController.swift */; };
@@ -117,6 +118,7 @@
 		4F01B0F724F729E3005B6CD7 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		4F01B0F924F72C1F005B6CD7 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		4F01B0FC24F72F69005B6CD7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4F24EAAA25056E74009E11BE /* DashboardAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAnalytics.swift; sourceTree = "<group>"; };
 		4F3AED052501865D00920A46 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4F3AED0925018C7E00920A46 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		4F3AED0B25018E6600920A46 /* TagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 		4F4C5EEF24FC62340087B5D4 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				4F24EAAA25056E74009E11BE /* DashboardAnalytics.swift */,
 				4F4C5F0024FC70A00087B5D4 /* Tag */,
 				4F4C5F0124FC70AC0087B5D4 /* Bill */,
 				4F4C5F0A24FC77960087B5D4 /* Expense */,
@@ -722,6 +725,7 @@
 				4FABA79324FE836500A0B7B6 /* TransactionTableViewCell.swift in Sources */,
 				4FBA646A250329DE000C5CCA /* NavigationController+Extension.swift in Sources */,
 				4F9B5BA52502417E00187BA6 /* ReminderService.swift in Sources */,
+				4F24EAAB25056E74009E11BE /* DashboardAnalytics.swift in Sources */,
 				4F4C5EEC24FC5C020087B5D4 /* EndpointError.swift in Sources */,
 				4FABA78E24FE7E8B00A0B7B6 /* TransactionViewController.swift in Sources */,
 				4FE6A73124F8555A00AD9D2C /* MainViewController.swift in Sources */,
