@@ -12,6 +12,7 @@ class AuthRootViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setTransparentNavBar()
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.shadowImage = UIImage()
     }
 }
