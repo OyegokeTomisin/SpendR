@@ -44,7 +44,7 @@
             <objects>
                 <viewController id="kWU-4G-SRi" customClass="DashboardViewController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xuR-Es-3dS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2vW-1l-eHr">
@@ -501,7 +501,7 @@
             <objects>
                 <viewController title="Create Tag" id="4cn-Jc-z0u" customClass="AddTagViewController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zu7-o6-ua9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="VB4-Cy-jFf">
@@ -602,7 +602,7 @@
             <objects>
                 <viewController title="Bill Reminder" id="r4o-fG-3gF" customClass="AddBillViewController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rwx-cP-5r5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jiU-xH-h1p">
@@ -696,7 +696,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="qXa-Vu-yEP">
-                                        <rect key="frame" x="0.0" y="209" width="374" height="54"/>
+                                        <rect key="frame" x="0.0" y="209" width="374" height="68"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nvu-Zn-Qe4">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="0.0"/>
@@ -711,10 +711,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gHl-7w-2I8">
-                                                <rect key="frame" x="0.0" y="6" width="374" height="48"/>
+                                                <rect key="frame" x="0.0" y="6" width="374" height="62"/>
                                                 <color key="backgroundColor" name="Cell"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="48" id="aXH-zn-FYZ"/>
+                                                    <constraint firstAttribute="height" constant="62" id="aXH-zn-FYZ"/>
                                                 </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jdd-CX-dlX">
                                                     <size key="itemSize" width="128" height="128"/>
@@ -820,7 +820,7 @@
             <objects>
                 <viewController id="F3N-Us-Iso" customClass="AddExpenseViewController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="heE-u7-cTF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="zNu-If-7AH">
@@ -869,7 +869,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="nTZ-nW-xb7">
-                                        <rect key="frame" x="0.0" y="102" width="374" height="54"/>
+                                        <rect key="frame" x="0.0" y="102" width="374" height="68"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="xjv-P2-Lsc">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="3"/>
@@ -889,10 +889,10 @@
                                                 </subviews>
                                             </stackView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uRd-TJ-WRc">
-                                                <rect key="frame" x="0.0" y="6" width="374" height="48"/>
+                                                <rect key="frame" x="0.0" y="6" width="374" height="62"/>
                                                 <color key="backgroundColor" name="Cell"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="48" id="4WB-8U-O6o"/>
+                                                    <constraint firstAttribute="height" constant="62" id="4WB-8U-O6o"/>
                                                 </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2yc-0B-twr">
                                                     <size key="itemSize" width="128" height="128"/>
