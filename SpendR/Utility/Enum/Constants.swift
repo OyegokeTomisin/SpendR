@@ -15,6 +15,10 @@ enum MessageConstants {
     static let logoutTitle = "Logout"
     static let confirmLogout = "Are you sure you want to logout?"
     static let general = "General"
+    static let success = "Success!!"
+    static let tagCreated = "Your new tag has been added"
+    static let billCreated = "Your bill reminder has been added "
+    static let expenseCreated = "New expense has been added to your history"
 }
 
 enum ParamConstant: String {

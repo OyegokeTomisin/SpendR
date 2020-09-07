@@ -86,7 +86,9 @@ extension AddExpenseViewController: UICollectionViewDataSource, UICollectionView
 extension AddExpenseViewController: ExpenseServiceDelegate {
     func didCompleteRequestWithSuccess(expenses: [Expense]?) {
         HUD.dismiss()
-        navigationController?.popViewController(animated: true)
+        showAlert(title: MessageConstants.success, message: MessageConstants.expenseCreated) {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 
     func didCompleteRequestWithFailure(error: String) {

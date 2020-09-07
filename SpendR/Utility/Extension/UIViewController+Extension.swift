@@ -13,10 +13,10 @@ extension UIViewController {
         return String(describing: self)
     }
 
-    func showAlert(title: String, message: String) {
+    func showAlert(title: String, message: String, completion: (() -> Void)? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "Okay", style: .default, handler: nil)
         alert.addAction(action)
-        present(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: completion)
     }
 }

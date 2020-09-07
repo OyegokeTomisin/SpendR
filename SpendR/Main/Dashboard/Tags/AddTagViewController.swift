@@ -32,7 +32,9 @@ class AddTagViewController: UIViewController {
 extension AddTagViewController: TagServiceDelegate {
     func didCompleteRequestWithSuccess(tags: [Tag]?) {
         HUD.dismiss()
-        navigationController?.popViewController(animated: true)
+        showAlert(title: MessageConstants.success, message: MessageConstants.tagCreated) {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 
     func didCompleteRequestWithFailure(error: String) {

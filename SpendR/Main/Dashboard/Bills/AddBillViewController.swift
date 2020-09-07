@@ -108,7 +108,9 @@ extension AddBillViewController: UICollectionViewDataSource, UICollectionViewDel
 extension AddBillViewController: BillServicedelegate {
     func didCompleteRequestWithSuccess(bills: [Bill]?) {
         HUD.dismiss()
-        navigationController?.popViewController(animated: true)
+        showAlert(title: MessageConstants.success, message: MessageConstants.billCreated) {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 
     func didCompleteRequestWithFailure(error: String) {
