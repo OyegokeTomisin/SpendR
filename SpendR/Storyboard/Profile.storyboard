@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IYi-Fi-9C1">
-    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -37,7 +37,7 @@
             <objects>
                 <viewController id="f4g-ou-V5g" customClass="ProfileViewController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YfY-vk-IiP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="L5A-pJ-L8R">
@@ -255,7 +255,7 @@
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="XK5-bx-ai2" customClass="TagViewController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QfJ-LP-ebv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="60" estimatedRowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tQv-jS-73g">
@@ -267,12 +267,31 @@
                                     <outlet property="delegate" destination="XK5-bx-ai2" id="5rU-nJ-3gT"/>
                                 </connections>
                             </tableView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qoj-lj-ikm">
+                                <rect key="frame" x="123.5" y="200" width="167.5" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing to see here " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqx-7O-Kf8">
+                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <color key="textColor" name="Label"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No tags created yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AC-x3-jld">
+                                        <rect key="frame" x="28.5" y="21.5" width="110" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                        <color key="textColor" name="Label"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" name="Cell"/>
                         <constraints>
                             <constraint firstItem="tQv-jS-73g" firstAttribute="top" secondItem="7r2-iM-iW6" secondAttribute="top" id="Bar-fY-4Rd"/>
+                            <constraint firstItem="qoj-lj-ikm" firstAttribute="top" secondItem="7r2-iM-iW6" secondAttribute="top" constant="200" id="rN7-MG-gSM"/>
                             <constraint firstAttribute="bottom" secondItem="tQv-jS-73g" secondAttribute="bottom" id="sUI-g1-ElD"/>
                             <constraint firstItem="7r2-iM-iW6" firstAttribute="trailing" secondItem="tQv-jS-73g" secondAttribute="trailing" id="tMd-Pr-KUP"/>
+                            <constraint firstItem="qoj-lj-ikm" firstAttribute="centerX" secondItem="QfJ-LP-ebv" secondAttribute="centerX" id="ukD-x8-NBR"/>
                             <constraint firstItem="tQv-jS-73g" firstAttribute="leading" secondItem="7r2-iM-iW6" secondAttribute="leading" id="x6Q-GS-Hbm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7r2-iM-iW6"/>
@@ -281,6 +300,7 @@
                         <barButtonItem key="backBarButtonItem" title="  " id="1jT-aG-R9h"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="emptyStateStackView" destination="qoj-lj-ikm" id="pNc-VQ-aXH"/>
                         <outlet property="tagTableView" destination="tQv-jS-73g" id="9Ry-Xl-XkT"/>
                     </connections>
                 </viewController>

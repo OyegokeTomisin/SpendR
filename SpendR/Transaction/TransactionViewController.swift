@@ -14,6 +14,7 @@ class TransactionViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segment: UISegmentedControl!
+    @IBOutlet weak var emptyStateStackView: UIStackView!
 
     private var transaction: Transaction = .expense
     private var expenseService: ExpenseService?
@@ -73,6 +74,8 @@ class TransactionViewController: UIViewController {
 
 extension TransactionViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        emptyStateStackView.isHidden
+            = !(transaction == .expense ? expenses.count == 0 : bills.count == 0)
         return transaction == .expense ? expenses.count : bills.count
     }
 
