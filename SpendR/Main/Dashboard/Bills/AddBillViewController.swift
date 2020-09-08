@@ -105,7 +105,7 @@ extension AddBillViewController: UICollectionViewDataSource, UICollectionViewDel
     }
 }
 
-extension AddBillViewController: BillServicedelegate {
+extension AddBillViewController: BillServiceDelegate {
     func didCompleteRequestWithSuccess(bills: [Bill]?) {
         HUD.dismiss()
         showAlert(title: MessageConstants.success, message: MessageConstants.billCreated) {

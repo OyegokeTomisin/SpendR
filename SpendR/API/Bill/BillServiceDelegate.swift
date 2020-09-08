@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol BillServicedelegate: class {
+protocol BillServiceDelegate: class {
     func didCompleteRequestWithSuccess(bills: [Bill]?)
     func didCompleteRequestWithFailure(error: String)
 }

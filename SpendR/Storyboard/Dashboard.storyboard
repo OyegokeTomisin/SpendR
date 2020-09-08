@@ -44,7 +44,7 @@
             <objects>
                 <viewController id="kWU-4G-SRi" customClass="DashboardViewController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xuR-Es-3dS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2vW-1l-eHr">
@@ -282,11 +282,30 @@
                                                     </tableView>
                                                 </subviews>
                                             </stackView>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="P3y-Ev-05s">
+                                                <rect key="frame" x="120.5" y="143.5" width="173" height="36"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing to see here " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgr-Ff-LZf">
+                                                        <rect key="frame" x="3" y="0.0" width="167.5" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                        <color key="textColor" name="Label"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't spent money lately" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J00-xc-pow">
+                                                        <rect key="frame" x="0.0" y="21.5" width="173" height="14.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                                        <color key="textColor" name="Label"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" name="Cell"/>
                                         <constraints>
+                                            <constraint firstItem="P3y-Ev-05s" firstAttribute="centerY" secondItem="ksF-ja-M7a" secondAttribute="centerY" id="1pb-fP-W6O"/>
                                             <constraint firstAttribute="bottom" secondItem="oJV-W2-l0g" secondAttribute="bottom" id="ABk-Fl-suW"/>
                                             <constraint firstItem="oJV-W2-l0g" firstAttribute="top" secondItem="ksF-ja-M7a" secondAttribute="top" id="fWW-dJ-Lgo"/>
+                                            <constraint firstItem="P3y-Ev-05s" firstAttribute="centerX" secondItem="ksF-ja-M7a" secondAttribute="centerX" id="fyj-A8-wm5"/>
                                             <constraint firstItem="oJV-W2-l0g" firstAttribute="leading" secondItem="ksF-ja-M7a" secondAttribute="leading" id="hbc-Rd-umk"/>
                                             <constraint firstAttribute="trailing" secondItem="oJV-W2-l0g" secondAttribute="trailing" id="uEi-XP-Ne5"/>
                                         </constraints>
@@ -481,6 +500,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="2xf-TO-wrT"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="emptyStateStackView" destination="P3y-Ev-05s" id="Yw6-VW-8uq"/>
                         <outlet property="topSpendLabel" destination="M3O-Qf-24Y" id="RiG-JF-jN1"/>
                         <outlet property="topTagAmount_01" destination="4bg-RV-n7Z" id="Wn0-W9-3nH"/>
                         <outlet property="topTagAmount_02" destination="xZT-mq-tED" id="U9U-HY-90R"/>
@@ -501,7 +521,7 @@
             <objects>
                 <viewController title="Create Tag" id="4cn-Jc-z0u" customClass="AddTagViewController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zu7-o6-ua9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="VB4-Cy-jFf">
@@ -602,7 +622,7 @@
             <objects>
                 <viewController title="Bill Reminder" id="r4o-fG-3gF" customClass="AddBillViewController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rwx-cP-5r5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jiU-xH-h1p">
@@ -820,7 +840,7 @@
             <objects>
                 <viewController id="F3N-Us-Iso" customClass="AddExpenseViewController" customModule="SpendR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="heE-u7-cTF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="zNu-If-7AH">

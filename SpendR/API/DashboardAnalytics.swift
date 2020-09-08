@@ -54,7 +54,7 @@ class DashboardAnalytics {
         var third: TagSpend?
 
         var topCategorySpend: [TagSpend] = group.map {
-            return (group[$0.key]?.first?.tag?.name, calculateExpenseTotal(expenses: $0.value))
+            return (group[$0.key]?.first?.tag?.name ?? "Other", calculateExpenseTotal(expenses: $0.value))
         }
 
         topCategorySpend.sort { $0.amount > $1.amount }

@@ -11,6 +11,7 @@ import UIKit
 class TagViewController: UIViewController {
 
     @IBOutlet weak var tagTableView: UITableView!
+    @IBOutlet weak var emptyStateStackView: UIStackView!
 
     private var tags = [Tag]()
     private var tagService: TagService?
@@ -39,6 +40,7 @@ class TagViewController: UIViewController {
 
 extension TagViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        emptyStateStackView.isHidden = tags.count != 0
         return tags.count
     }
 

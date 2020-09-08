@@ -19,6 +19,7 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var topTagDescription_02: UILabel!
     @IBOutlet weak var topTagDescription_03: UILabel!
     @IBOutlet weak var transactionTableView: UITableView!
+    @IBOutlet weak var emptyStateStackView: UIStackView!
 
     private var recent = [Expense]()
     private var topTags = [Tag]()
@@ -67,7 +68,9 @@ extension DashboardViewController: DashboardAnalyticsDelegate {
 extension DashboardViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return recent.prefix(2).count
+        let count = recent.prefix(2).count
+        emptyStateStackView.isHidden = count != 0
+        return count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

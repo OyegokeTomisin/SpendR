@@ -26,11 +26,30 @@
                                     <outlet property="delegate" destination="D1z-st-GAY" id="AsS-wu-gnK"/>
                                 </connections>
                             </tableView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="s1o-gD-MYT">
+                                <rect key="frame" x="123.5" y="288" width="167.5" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing to see here " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqC-D9-M15">
+                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <color key="textColor" name="Label"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add an expense or bill " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAW-SC-smK">
+                                        <rect key="frame" x="20.5" y="21.5" width="126.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                        <color key="textColor" name="Label"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" name="ThemeWhite"/>
                         <constraints>
                             <constraint firstItem="qGa-pG-LDe" firstAttribute="leading" secondItem="K9b-hw-mEO" secondAttribute="leading" id="6zf-9a-BUT"/>
+                            <constraint firstItem="s1o-gD-MYT" firstAttribute="centerX" secondItem="yvi-et-GpL" secondAttribute="centerX" id="E6J-QP-RmL"/>
                             <constraint firstItem="K9b-hw-mEO" firstAttribute="bottom" secondItem="qGa-pG-LDe" secondAttribute="bottom" id="HJE-JM-8YD"/>
+                            <constraint firstItem="s1o-gD-MYT" firstAttribute="top" secondItem="K9b-hw-mEO" secondAttribute="top" constant="200" id="PgL-lP-Wyh"/>
                             <constraint firstItem="qGa-pG-LDe" firstAttribute="trailing" secondItem="K9b-hw-mEO" secondAttribute="trailing" id="lFf-gm-4ex"/>
                             <constraint firstItem="qGa-pG-LDe" firstAttribute="top" secondItem="K9b-hw-mEO" secondAttribute="top" id="tOr-b6-r94"/>
                         </constraints>
@@ -51,6 +70,7 @@
                         </segmentedControl>
                     </navigationItem>
                     <connections>
+                        <outlet property="emptyStateStackView" destination="s1o-gD-MYT" id="sNs-4X-g1a"/>
                         <outlet property="segment" destination="QD3-CV-aHp" id="RBs-Xi-9mK"/>
                         <outlet property="tableView" destination="qGa-pG-LDe" id="3BL-9n-Fv8"/>
                     </connections>
@@ -85,6 +105,9 @@
         <image name="History" width="30" height="30"/>
         <namedColor name="Cell">
             <color red="0.98199999332427979" green="0.99000000953674316" blue="0.9869999885559082" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Label">
+            <color red="0.23999999463558197" green="0.23000000417232513" blue="0.30199998617172241" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="ThemePurple">
             <color red="0.23899999260902405" green="0.23100000619888306" blue="0.30199998617172241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -12,7 +12,6 @@
 		4F01B0C024F7115C005B6CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F01B0BE24F7115C005B6CD7 /* Main.storyboard */; };
 		4F01B0C224F7115E005B6CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F01B0C124F7115E005B6CD7 /* Assets.xcassets */; };
 		4F01B0C524F7115E005B6CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F01B0C324F7115E005B6CD7 /* LaunchScreen.storyboard */; };
-		4F01B0D024F7115F005B6CD7 /* SpendRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0CF24F7115F005B6CD7 /* SpendRTests.swift */; };
 		4F01B0DE24F714A4005B6CD7 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F01B0DD24F714A4005B6CD7 /* Auth.storyboard */; };
 		4F01B0E024F71541005B6CD7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0DF24F71541005B6CD7 /* LoginViewController.swift */; };
 		4F01B0E224F7154E005B6CD7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B0E124F7154E005B6CD7 /* SignUpViewController.swift */; };
@@ -32,6 +31,14 @@
 		4F3AED0C25018E6600920A46 /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AED0B25018E6600920A46 /* TagViewController.swift */; };
 		4F3AED122501971900920A46 /* TagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AED102501971900920A46 /* TagTableViewCell.swift */; };
 		4F3AED132501971900920A46 /* TagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F3AED112501971900920A46 /* TagTableViewCell.xib */; };
+		4F4BCC07250796A30063DE3F /* TagServiceAsyncDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BCC06250796A30063DE3F /* TagServiceAsyncDelegate.swift */; };
+		4F4BCC0925079AFA0063DE3F /* TagServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BCC0825079AFA0063DE3F /* TagServiceTests.swift */; };
+		4F4BCC0B2507D9020063DE3F /* BillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BCC0A2507D9020063DE3F /* BillTests.swift */; };
+		4F4BCC0D2507D9120063DE3F /* BillServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BCC0C2507D9120063DE3F /* BillServiceTests.swift */; };
+		4F4BCC0F2507D9220063DE3F /* BillServiceAsyncDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BCC0E2507D9220063DE3F /* BillServiceAsyncDelegate.swift */; };
+		4F4BCC122507E7960063DE3F /* ExpenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BCC112507E7960063DE3F /* ExpenseTests.swift */; };
+		4F4BCC142507E7AB0063DE3F /* ExpenseServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BCC132507E7AB0063DE3F /* ExpenseServiceTests.swift */; };
+		4F4BCC182507E8EC0063DE3F /* ExpenseServiceAsyncDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BCC172507E8EC0063DE3F /* ExpenseServiceAsyncDelegate.swift */; };
 		4F4C5EEC24FC5C020087B5D4 /* EndpointError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5EEB24FC5C020087B5D4 /* EndpointError.swift */; };
 		4F4C5EF124FC624B0087B5D4 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5EF024FC624B0087B5D4 /* Tag.swift */; };
 		4F4C5EF324FC62940087B5D4 /* EndpointData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C5EF224FC62940087B5D4 /* EndpointData.swift */; };
@@ -69,6 +76,10 @@
 		4FBA6466250251B5000C5CCA /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBA6465250251B5000C5CCA /* Date+Extension.swift */; };
 		4FBA646825032666000C5CCA /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FBA646725032666000C5CCA /* Color.xcassets */; };
 		4FBA646A250329DE000C5CCA /* NavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBA6469250329DE000C5CCA /* NavigationController+Extension.swift */; };
+		4FBC51E92506A9A7000CF762 /* TagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC51E82506A9A7000CF762 /* TagTests.swift */; };
+		4FBC51EC2506AFEE000CF762 /* UserAcountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC51EB2506AFEE000CF762 /* UserAcountTests.swift */; };
+		4FBC51EF2506C310000CF762 /* AuthServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC51EE2506C310000CF762 /* AuthServiceTests.swift */; };
+		4FBC51F12506E068000CF762 /* AuthServiceAsyncDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC51F02506E068000CF762 /* AuthServiceAsyncDelegate.swift */; };
 		4FE6A72624F8535C00AD9D2C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72524F8535C00AD9D2C /* Profile.storyboard */; };
 		4FE6A72A24F8539700AD9D2C /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72924F8539700AD9D2C /* Transaction.storyboard */; };
 		4FE6A72C24F853A100AD9D2C /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6A72B24F853A100AD9D2C /* Dashboard.storyboard */; };
@@ -103,7 +114,6 @@
 		4F01B0C424F7115E005B6CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F01B0C624F7115E005B6CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F01B0CB24F7115F005B6CD7 /* SpendRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpendRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F01B0CF24F7115F005B6CD7 /* SpendRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendRTests.swift; sourceTree = "<group>"; };
 		4F01B0D124F7115F005B6CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F01B0DD24F714A4005B6CD7 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		4F01B0DF24F71541005B6CD7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +134,14 @@
 		4F3AED0B25018E6600920A46 /* TagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
 		4F3AED102501971900920A46 /* TagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTableViewCell.swift; sourceTree = "<group>"; };
 		4F3AED112501971900920A46 /* TagTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagTableViewCell.xib; sourceTree = "<group>"; };
+		4F4BCC06250796A30063DE3F /* TagServiceAsyncDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagServiceAsyncDelegate.swift; sourceTree = "<group>"; };
+		4F4BCC0825079AFA0063DE3F /* TagServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagServiceTests.swift; sourceTree = "<group>"; };
+		4F4BCC0A2507D9020063DE3F /* BillTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillTests.swift; sourceTree = "<group>"; };
+		4F4BCC0C2507D9120063DE3F /* BillServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillServiceTests.swift; sourceTree = "<group>"; };
+		4F4BCC0E2507D9220063DE3F /* BillServiceAsyncDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillServiceAsyncDelegate.swift; sourceTree = "<group>"; };
+		4F4BCC112507E7960063DE3F /* ExpenseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTests.swift; sourceTree = "<group>"; };
+		4F4BCC132507E7AB0063DE3F /* ExpenseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseServiceTests.swift; sourceTree = "<group>"; };
+		4F4BCC172507E8EC0063DE3F /* ExpenseServiceAsyncDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseServiceAsyncDelegate.swift; sourceTree = "<group>"; };
 		4F4C5EEB24FC5C020087B5D4 /* EndpointError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointError.swift; sourceTree = "<group>"; };
 		4F4C5EF024FC624B0087B5D4 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		4F4C5EF224FC62940087B5D4 /* EndpointData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointData.swift; sourceTree = "<group>"; };
@@ -160,6 +178,10 @@
 		4FBA6465250251B5000C5CCA /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		4FBA646725032666000C5CCA /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		4FBA6469250329DE000C5CCA /* NavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationController+Extension.swift"; sourceTree = "<group>"; };
+		4FBC51E82506A9A7000CF762 /* TagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TagTests.swift; path = ../TagTests.swift; sourceTree = "<group>"; };
+		4FBC51EB2506AFEE000CF762 /* UserAcountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAcountTests.swift; sourceTree = "<group>"; };
+		4FBC51EE2506C310000CF762 /* AuthServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceTests.swift; sourceTree = "<group>"; };
+		4FBC51F02506E068000CF762 /* AuthServiceAsyncDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceAsyncDelegate.swift; sourceTree = "<group>"; };
 		4FE6A72524F8535C00AD9D2C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		4FE6A72924F8539700AD9D2C /* Transaction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transaction.storyboard; sourceTree = "<group>"; };
 		4FE6A72B24F853A100AD9D2C /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
@@ -233,7 +255,8 @@
 		4F01B0CE24F7115F005B6CD7 /* SpendRTests */ = {
 			isa = PBXGroup;
 			children = (
-				4F01B0CF24F7115F005B6CD7 /* SpendRTests.swift */,
+				4FBC51EA2506AFB2000CF762 /* Auth */,
+				4FBC51E32506A945000CF762 /* API */,
 				4F01B0D124F7115F005B6CD7 /* Info.plist */,
 			);
 			path = SpendRTests;
@@ -336,6 +359,36 @@
 				4F3AED0B25018E6600920A46 /* TagViewController.swift */,
 			);
 			path = Tag;
+			sourceTree = "<group>";
+		};
+		4F4BCC042507956E0063DE3F /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				4FBC51E82506A9A7000CF762 /* TagTests.swift */,
+				4F4BCC0825079AFA0063DE3F /* TagServiceTests.swift */,
+				4F4BCC06250796A30063DE3F /* TagServiceAsyncDelegate.swift */,
+			);
+			path = Tag;
+			sourceTree = "<group>";
+		};
+		4F4BCC052507964D0063DE3F /* Bill */ = {
+			isa = PBXGroup;
+			children = (
+				4F4BCC0A2507D9020063DE3F /* BillTests.swift */,
+				4F4BCC0C2507D9120063DE3F /* BillServiceTests.swift */,
+				4F4BCC0E2507D9220063DE3F /* BillServiceAsyncDelegate.swift */,
+			);
+			path = Bill;
+			sourceTree = "<group>";
+		};
+		4F4BCC102507E7810063DE3F /* Expense */ = {
+			isa = PBXGroup;
+			children = (
+				4F4BCC112507E7960063DE3F /* ExpenseTests.swift */,
+				4F4BCC132507E7AB0063DE3F /* ExpenseServiceTests.swift */,
+				4F4BCC172507E8EC0063DE3F /* ExpenseServiceAsyncDelegate.swift */,
+			);
+			path = Expense;
 			sourceTree = "<group>";
 		};
 		4F4C5EEF24FC62340087B5D4 /* API */ = {
@@ -448,6 +501,34 @@
 			);
 			name = Transaction;
 			path = ../Transaction;
+			sourceTree = "<group>";
+		};
+		4FBC51E32506A945000CF762 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4F4BCC102507E7810063DE3F /* Expense */,
+				4F4BCC052507964D0063DE3F /* Bill */,
+				4F4BCC042507956E0063DE3F /* Tag */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4FBC51EA2506AFB2000CF762 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4FBC51EB2506AFEE000CF762 /* UserAcountTests.swift */,
+				4FBC51ED2506C2FF000CF762 /* Requests */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		4FBC51ED2506C2FF000CF762 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				4FBC51EE2506C310000CF762 /* AuthServiceTests.swift */,
+				4FBC51F02506E068000CF762 /* AuthServiceAsyncDelegate.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 		4FE6A72D24F853B700AD9D2C /* Storyboard */ = {
@@ -769,7 +850,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F01B0D024F7115F005B6CD7 /* SpendRTests.swift in Sources */,
+				4F4BCC122507E7960063DE3F /* ExpenseTests.swift in Sources */,
+				4F4BCC0B2507D9020063DE3F /* BillTests.swift in Sources */,
+				4FBC51E92506A9A7000CF762 /* TagTests.swift in Sources */,
+				4F4BCC182507E8EC0063DE3F /* ExpenseServiceAsyncDelegate.swift in Sources */,
+				4F4BCC0D2507D9120063DE3F /* BillServiceTests.swift in Sources */,
+				4F4BCC142507E7AB0063DE3F /* ExpenseServiceTests.swift in Sources */,
+				4F4BCC07250796A30063DE3F /* TagServiceAsyncDelegate.swift in Sources */,
+				4FBC51EC2506AFEE000CF762 /* UserAcountTests.swift in Sources */,
+				4F4BCC0F2507D9220063DE3F /* BillServiceAsyncDelegate.swift in Sources */,
+				4F4BCC0925079AFA0063DE3F /* TagServiceTests.swift in Sources */,
+				4FBC51F12506E068000CF762 /* AuthServiceAsyncDelegate.swift in Sources */,
+				4FBC51EF2506C310000CF762 /* AuthServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -922,6 +1014,7 @@
 			baseConfigurationReference = 5BB3B3168C2158D839EC31BA /* Pods-SpendR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9S6683TC8T;
 				INFOPLIST_FILE = SpendR/Info.plist;
@@ -931,6 +1024,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomisin.SpendR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -941,6 +1035,7 @@
 			baseConfigurationReference = 1C2537A652F6E1089C63A67C /* Pods-SpendR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9S6683TC8T;
 				INFOPLIST_FILE = SpendR/Info.plist;
@@ -950,6 +1045,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomisin.SpendR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

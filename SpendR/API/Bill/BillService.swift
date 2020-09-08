@@ -11,7 +11,7 @@ import Foundation
 struct BillService {
 
     private let request = BillRequest()
-    weak var delegate: BillServicedelegate?
+    weak var delegate: BillServiceDelegate?
 
     func create(bill: Bill) {
         request.createBill(bill: bill) { result in
