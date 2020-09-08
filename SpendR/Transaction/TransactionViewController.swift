@@ -8,7 +8,7 @@
 
 import UIKit
 
-typealias TransactionServiceDelegate = ExpenseServiceDelegate & BillServicedelegate
+typealias TransactionServiceDelegate = ExpenseServiceDelegate & BillServiceDelegate
 
 class TransactionViewController: UIViewController {
 
