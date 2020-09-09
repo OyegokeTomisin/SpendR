@@ -24,15 +24,15 @@ class AddTagViewController: UIViewController {
     private func createTag(with name: String) {
         let tag = Tag(name: name)
         let service = TagService(delegate: self)
-        service.create(tag: tag)
         HUD.display()
+        service.create(tag: tag)
     }
 }
 
 extension AddTagViewController: TagServiceDelegate {
     func didCompleteRequestWithSuccess(tags: [Tag]?) {
-        HUD.dismiss()
         showAlert(title: MessageConstants.success, message: MessageConstants.tagCreated) {
+            HUD.dismiss()
             self.navigationController?.popViewController(animated: true)
         }
     }

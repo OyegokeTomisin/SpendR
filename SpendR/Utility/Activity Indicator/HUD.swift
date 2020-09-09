@@ -13,12 +13,12 @@ final class HUD {
     static func display() {
         DispatchQueue.main.async {
             SVProgressHUD.show()
-            SVProgressHUD.setDefaultMaskType(.black)
+            SVProgressHUD.setDefaultMaskType(.none)
         }
     }
 
     static func dismiss() {
-        DispatchQueue.main.async {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             SVProgressHUD.dismiss()
         }
     }
