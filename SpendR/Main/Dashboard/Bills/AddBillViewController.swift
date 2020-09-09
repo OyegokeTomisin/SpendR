@@ -29,6 +29,7 @@ class AddBillViewController: UIViewController {
         setDatePickerTextInput()
         fetchTags()
     }
+
     @IBAction func amountValueChanged(_ sender: UITextField) {
         sender.currencyFormat()
     }
@@ -56,7 +57,7 @@ class AddBillViewController: UIViewController {
         if let indexpath = selectedIndexPath {
             createBill(name: name, amount: amount, date: date, selectedTag: tags[indexpath.item])
         } else {
-             createBill(name: name, amount: amount, date: date, selectedTag: nil)
+            createBill(name: name, amount: amount, date: date, selectedTag: nil)
         }
     }
 
@@ -107,8 +108,8 @@ extension AddBillViewController: UICollectionViewDataSource, UICollectionViewDel
 
 extension AddBillViewController: BillServiceDelegate {
     func didCompleteRequestWithSuccess(bills: [Bill]?) {
-        HUD.dismiss()
         showAlert(title: MessageConstants.success, message: MessageConstants.billCreated) {
+            HUD.dismiss()
             self.navigationController?.popViewController(animated: true)
         }
     }
